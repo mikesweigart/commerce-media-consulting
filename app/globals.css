@@ -1,26 +1,79 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Navy palette */
+  --color-navy-950: #06101E;
+  --color-navy-900: #0A1628;
+  --color-navy-800: #0F1F3D;
+  --color-navy-700: #1B2B4B;
+  --color-navy-600: #243761;
+  --color-navy-500: #2E4677;
+  --color-navy-400: #3D5A8A;
+  --color-navy-300: #5A7AAF;
+  --color-navy-200: #8AAAD0;
+  --color-navy-100: #C5D7EC;
+  --color-navy-50: #EEF4FB;
+
+  /* Gold palette */
+  --color-gold-950: #2A1C05;
+  --color-gold-900: #4A3710;
+  --color-gold-800: #6B4F18;
+  --color-gold-700: #9A7B2E;
+  --color-gold-600: #B89438;
+  --color-gold-500: #C9A84C;
+  --color-gold-400: #D4B86A;
+  --color-gold-300: #E8D5A3;
+  --color-gold-200: #F0E6C8;
+  --color-gold-100: #F8F3E8;
+  --color-gold-50: #FDFBF5;
+
+  /* Cream */
+  --color-cream-50: #FAFAF8;
+  --color-cream-100: #F5F4F0;
+  --color-cream-200: #EEECE5;
+
+  /* Fonts */
+  --font-heading: var(--font-jakarta);
+  --font-sans: var(--font-inter);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #C9A84C; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #B89438; }
+
+::selection { background-color: #C9A84C; color: #0A1628; }
+
+:focus-visible { outline: 2px solid #C9A84C; outline-offset: 3px; border-radius: 4px; }
+
+/* Prose overrides */
+.prose { --tw-prose-headings: #0A1628; --tw-prose-links: #C9A84C; }
+.prose h2, .prose h3 { font-family: var(--font-jakarta); }
+.prose a { color: #C9A84C; }
+.prose blockquote { border-left-color: #C9A84C; background: #FDFBF5; border-radius: 0 8px 8px 0; padding: 1rem 1.5rem; }
+.prose strong { color: #0A1628; }
