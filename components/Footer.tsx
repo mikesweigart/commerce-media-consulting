@@ -59,7 +59,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3 mt-6">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/don-knapp-2037504/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/10 hover:bg-gold-500 hover:text-navy-900 flex items-center justify-center transition-all duration-200 text-white/60"
