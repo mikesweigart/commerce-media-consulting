@@ -77,3 +77,41 @@ body {
 .prose a { color: #C9A84C; }
 .prose blockquote { border-left-color: #C9A84C; background: #FDFBF5; border-radius: 0 8px 8px 0; padding: 1rem 1.5rem; }
 .prose strong { color: #0A1628; }
+
+/* ── Tool sliders ──────────────────────────────────────────── */
+.tool-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  border-radius: 9999px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+.tool-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #0A1628;
+  border: 3px solid #C9A84C;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.tool-slider::-webkit-slider-thumb:hover { transform: scale(1.12); }
+.tool-slider::-webkit-slider-thumb:active { transform: scale(1.2); box-shadow: 0 4px 16px rgba(0,0,0,0.25); }
+.tool-slider::-moz-range-thumb {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #0A1628;
+  border: 3px solid #C9A84C;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .tool-slider::-webkit-slider-thumb { width: 44px; height: 44px; }
+  .tool-slider::-moz-range-thumb { width: 44px; height: 44px; }
+}

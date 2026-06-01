@@ -45,11 +45,11 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="inline-block mb-5">
               <Image
-                src="/commercelogo.PNG"
+                src="/whiteonbluelogo.png"
                 alt="Commerce Media Consulting Group"
                 width={160}
                 height={44}
-                className="h-11 w-auto object-contain brightness-0 invert"
+                className="h-10 w-auto object-contain"
               />
             </Link>
             <p className="text-white/50 text-sm leading-relaxed max-w-sm">

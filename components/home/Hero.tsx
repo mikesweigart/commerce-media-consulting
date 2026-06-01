@@ -12,9 +12,9 @@ const metrics = [
 ];
 
 const benefits = [
-  "Sharpen positioning that wins deals faster",
-  "Build a playbook every rep can execute",
-  "Run a pipeline system your board trusts",
+  "Stop losing deals to better-positioned competitors",
+  "Give every rep a playbook they can actually execute",
+  "Walk into board meetings with a forecast they'll trust",
 ];
 
 export default function Hero() {
@@ -65,9 +65,10 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-white/60 text-lg leading-relaxed mb-9 max-w-[480px]"
             >
-              In 90 days, build a five-part growth engine that aligns your
-              positioning, pricing, sales playbook, campaigns, and pipeline —
-              so your board can finally trust the forecast.
+              Your product is better than how it&apos;s being sold. The
+              positioning is blurry, the forecast changes every week, and your
+              board wants confidence you can&apos;t give them yet. Don Knapp
+              builds the GTM system that fixes all three — in 90 days.
             </motion.p>
 
             <motion.ul

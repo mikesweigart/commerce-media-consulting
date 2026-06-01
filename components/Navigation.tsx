@@ -12,8 +12,7 @@ const navLinks = [
   { href: "/results", label: "Results" },
   { href: "/about", label: "About Don" },
   { href: "/insights", label: "Insights" },
-  { href: "/tools", label: "Tools" },
-  { href: "/growth-audit", label: "Growth Audit" },
+  { href: "/tools", label: "Free Tools" },
 ];
 
 export default function Navigation() {
@@ -47,13 +46,13 @@ export default function Navigation() {
       >
         <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center group">
             <Image
-              src="/commercelogo.PNG"
+              src={lightNav ? "/whiteonbluelogo.png" : "/blueonwhitelogo.png"}
               alt="Commerce Media Consulting Group"
-              width={140}
-              height={40}
-              className="h-10 w-auto object-contain"
+              width={160}
+              height={44}
+              className="h-9 w-auto object-contain transition-opacity group-hover:opacity-80"
               priority
             />
           </Link>

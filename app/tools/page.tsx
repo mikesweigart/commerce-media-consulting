@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, TrendingUp, GitBranch, CheckCircle2, Clock } from "lucide-react";
+import { ArrowRight, TrendingUp, GitBranch, Search, CheckCircle2, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Free CPG Strategy Tools | Commerce Media Consulting Group",
@@ -48,6 +48,26 @@ const tools = [
     iconColor: "text-gold-700",
     badgeColor: "bg-gold-100 text-gold-700",
   },
+  {
+    href: "/growth-audit",
+    icon: Search,
+    badge: "GTM Diagnosis",
+    title: "3-Minute Growth Audit",
+    description: "A rapid diagnostic that surfaces exactly where your go-to-market is leaking revenue — across positioning, sales motion, pipeline health, and marketing alignment.",
+    time: "3 minutes",
+    outputs: [
+      "Personalized GTM gap analysis across 4 dimensions",
+      "Ranked list of your highest-leverage fixes",
+      "Clear next step based on your specific situation",
+      "Option to book a free 30-min debrief with Don",
+    ],
+    cta: "Start the Audit",
+    color: "from-emerald-500/10 to-emerald-600/5",
+    border: "border-emerald-200/60",
+    iconBg: "bg-emerald-100",
+    iconColor: "text-emerald-700",
+    badgeColor: "bg-emerald-100 text-emerald-700",
+  },
 ];
 
 const stats = [
@@ -76,7 +96,7 @@ export default function ToolsPage() {
               Answers before<br className="hidden lg:block" /> the conversation.
             </h1>
             <p className="text-white/60 text-xl leading-relaxed mb-10 max-w-2xl">
-              Two free diagnostic tools built for CPG brand leaders. Know exactly where you stand, which channels to prioritize, and what to fix — before your next buyer meeting.
+              Three free diagnostic tools built for CPG brand leaders. Know exactly where you stand, which channels to prioritize, and what to fix — before your next buyer meeting.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {stats.map((stat, i) => (
@@ -93,7 +113,7 @@ export default function ToolsPage() {
       {/* Tools */}
       <section className="py-20 bg-cream-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {tools.map((tool, i) => (
               <div
                 key={i}
