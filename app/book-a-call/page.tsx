@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { CheckCircle2, Clock, Calendar, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -137,8 +138,8 @@ export default function BookACall() {
               <div className="bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden">
                 <div className="bg-navy-900 px-8 py-6">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-gold-500 flex items-center justify-center font-heading font-bold text-navy-900 text-base">
-                      DK
+                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gold-400">
+                      <Image src="/knapppicture.png" alt="Don Knapp" width={48} height={48} className="w-full h-full object-cover object-top" />
                     </div>
                     <div>
                       <div className="font-heading font-bold text-white text-sm">Don Knapp</div>

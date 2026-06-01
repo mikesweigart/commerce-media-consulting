@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronRight } from "lucide-react";
@@ -46,25 +47,14 @@ export default function Navigation() {
         <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 bg-gold-500 rounded-lg flex items-center justify-center shadow-sm group-hover:bg-gold-400 transition-colors">
-              <span className="font-heading font-bold text-navy-900 text-sm">CM</span>
-            </div>
-            <div className="hidden sm:block">
-              <div
-                className={`font-heading font-bold text-[13px] leading-tight tracking-wide transition-colors ${
-                  lightNav ? "text-white" : "text-navy-900"
-                }`}
-              >
-                COMMERCE MEDIA
-              </div>
-              <div
-                className={`font-heading text-[10px] tracking-widest uppercase transition-colors ${
-                  lightNav ? "text-gold-400" : "text-gold-500"
-                }`}
-              >
-                Consulting Group
-              </div>
-            </div>
+            <Image
+              src="/commercelogo.PNG"
+              alt="Commerce Media Consulting Group"
+              width={140}
+              height={40}
+              className="h-10 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

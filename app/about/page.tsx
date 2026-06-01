@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, CheckCircle2, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -72,16 +73,18 @@ export default function About() {
                 there. He's not here to sell a methodology. He's here to fix your GTM.
               </p>
             </div>
-            {/* Photo placeholder */}
+            {/* Photo */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                <div className="w-72 h-96 rounded-2xl bg-gradient-to-br from-navy-700 to-navy-800 border border-white/10 flex flex-col items-center justify-center">
-                  <div className="w-24 h-24 rounded-full bg-gold-500/20 border-2 border-gold-500/40 flex items-center justify-center mb-4">
-                    <span className="font-heading font-bold text-gold-400 text-4xl">DK</span>
-                  </div>
-                  <p className="text-white/40 text-sm font-medium">Don Knapp</p>
-                  <p className="text-white/25 text-xs mt-1">Managing Partner</p>
-                  <p className="text-white/20 text-xs mt-4 px-6 text-center">[ Insert professional photo here ]</p>
+                <div className="w-72 h-96 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                  <Image
+                    src="/knapppicture.png"
+                    alt="Don Knapp, Managing Partner at Commerce Media Consulting Group"
+                    width={288}
+                    height={384}
+                    className="w-full h-full object-cover object-top"
+                    priority
+                  />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-gold-500 text-navy-900 rounded-xl px-4 py-2.5 shadow-xl">
                   <div className="text-sm font-bold font-heading">20+ Years</div>

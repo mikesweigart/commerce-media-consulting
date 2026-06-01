@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight, Clock, Calendar, Tag } from "lucide-react";
 import { articles, getArticleBySlug, getRelatedArticles } from "@/data/insights";
 
@@ -72,8 +73,8 @@ export default async function ArticlePage({ params }: Props) {
           </p>
           <div className="flex flex-wrap items-center gap-5 text-white/35 text-sm">
             <span className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-full bg-gold-500 flex items-center justify-center text-navy-900 font-bold text-xs">
-                DK
+              <div className="w-7 h-7 rounded-full overflow-hidden border border-gold-500/40">
+                <Image src="/knapppicture.png" alt="Don Knapp" width={28} height={28} className="w-full h-full object-cover object-top" />
               </div>
               Don Knapp
             </span>
@@ -108,8 +109,8 @@ export default async function ArticlePage({ params }: Props) {
               {/* Author card */}
               <div className="bg-cream-50 rounded-2xl border border-cream-200 p-6 mb-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-navy-900 flex items-center justify-center font-heading font-bold text-gold-400 text-base">
-                    DK
+                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gold-200">
+                    <Image src="/knapppicture.png" alt="Don Knapp" width={48} height={48} className="w-full h-full object-cover object-top" />
                   </div>
                   <div>
                     <div className="font-heading font-bold text-navy-900 text-sm">Don Knapp</div>
