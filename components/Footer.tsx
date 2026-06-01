@@ -5,6 +5,7 @@ import { Globe, Mail, ArrowRight } from "lucide-react";
 const footerLinks = {
   Services: [
     { label: "How We Work", href: "/how-we-work" },
+    { label: "Free Tools", href: "/tools" },
     { label: "Growth Audit", href: "/growth-audit" },
     { label: "Results", href: "/results" },
     { label: "Book a Call", href: "/book-a-call" },
