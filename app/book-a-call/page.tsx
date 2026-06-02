@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { CheckCircle2, Clock, Calendar, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -62,21 +63,27 @@ export default function BookACall() {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-2xl">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="max-w-2xl"
+          >
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-8 bg-gold-500" />
               <span className="text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">
                 Strategy Session
               </span>
             </div>
-            <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Let's diagnose your GTM together.
+            <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              Let&apos;s diagnose your GTM together.
             </h1>
-            <p className="text-white/60 text-lg leading-relaxed">
-              A 45-minute working session. No pitch, no pressure — just an honest
-              look at where your GTM stands and what the highest-leverage next steps are.
+            <p className="text-white/80 text-lg leading-relaxed">
+              In 45 minutes, we&apos;ll surface exactly where your GTM is leaking revenue
+              and what to fix first — across positioning, pipeline, playbook, and marketing
+              alignment. No pitch, no pressure. Just an honest diagnosis and a clear plan.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -96,12 +103,19 @@ export default function BookACall() {
                 </h3>
                 <ul className="flex flex-col gap-3">
                   {whatToBring.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
+                    <motion.li
+                      key={i}
+                      initial={{ opacity: 0, x: -16 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45, delay: i * 0.08 }}
+                      className="flex items-start gap-3"
+                    >
                       <div className="w-5 h-5 rounded-full bg-navy-100 border border-navy-200 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-navy-700 text-[10px] font-bold">{i + 1}</span>
                       </div>
                       <span className="text-gray-600 text-sm leading-relaxed">{item}</span>
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               </div>
@@ -112,10 +126,17 @@ export default function BookACall() {
                 </h3>
                 <ul className="flex flex-col gap-3">
                   {whatYouLeave.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
+                    <motion.li
+                      key={i}
+                      initial={{ opacity: 0, x: -16 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45, delay: i * 0.08 }}
+                      className="flex items-start gap-3"
+                    >
                       <CheckCircle2 size={16} className="text-gold-500 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-600 text-sm leading-relaxed">{item}</span>
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               </div>
@@ -134,7 +155,13 @@ export default function BookACall() {
             </div>
 
             {/* Right: booking card */}
-            <div className="lg:sticky lg:top-28">
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="lg:sticky lg:top-28"
+            >
               <div className="bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden">
                 <div className="bg-navy-900 px-8 py-6">
                   <div className="flex items-center gap-3">
@@ -188,7 +215,7 @@ export default function BookACall() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

@@ -52,29 +52,39 @@ export default function About() {
         />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 28 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+            >
               <div className="flex items-center gap-3 mb-6">
                 <div className="h-px w-8 bg-gold-500" />
                 <span className="text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">
                   About Don
                 </span>
               </div>
-              <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                 A guide, not a guru.
               </h1>
-              <p className="text-white/60 text-lg leading-relaxed mb-6">
-                Don Knapp is the Managing Partner of Commerce Media Consulting Group.
-                He works with B2B CEOs and CROs who want a clear, structured path to
-                predictable revenue — and are willing to do the work to build it.
+              <p className="text-white/85 text-lg leading-relaxed mb-6">
+                B2B companies hit the same GTM wall: positioning that won&apos;t stick,
+                a pipeline that won&apos;t hold, and forecasts the board won&apos;t trust.
+                Don Knapp has fixed all three for 47+ companies — as a 20-year commercial
+                operator first, as an advisor since.
               </p>
-              <p className="text-white/45 text-base leading-relaxed">
-                Don's approach is diagnostic and evidence-based: he starts with your
-                data, your customers, and your team's capabilities — and builds from
-                there. He's not here to sell a methodology. He's here to fix your GTM.
+              <p className="text-white/70 text-base leading-relaxed">
+                His approach is diagnostic and evidence-based: he starts with your data,
+                your customers, and your team&apos;s real capabilities — then builds from
+                there. He&apos;s not here to sell a methodology. He&apos;s here to fix your GTM.
               </p>
-            </div>
+            </motion.div>
             {/* Photo */}
-            <div className="flex justify-center lg:justify-end">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.85, delay: 0.25 }}
+              className="flex justify-center lg:justify-end"
+            >
               <div className="relative">
                 <div className="w-72 h-96 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                   <Image
@@ -91,7 +101,7 @@ export default function About() {
                   <div className="text-[10px] opacity-70">GTM Leadership</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -150,10 +160,17 @@ export default function About() {
               <h2 className="font-heading text-3xl font-bold text-navy-900 mb-8">Experience & Credentials</h2>
               <ul className="flex flex-col gap-4">
                 {credentials.map((c, i) => (
-                  <li key={i} className="flex items-start gap-3">
+                  <motion.li
+                    key={i}
+                    initial={{ opacity: 0, x: -16 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-40px" }}
+                    transition={{ duration: 0.5, delay: i * 0.07 }}
+                    className="flex items-start gap-3"
+                  >
                     <CheckCircle2 size={18} className="text-gold-500 flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700 text-sm leading-relaxed">{c}</span>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </div>
@@ -191,10 +208,17 @@ export default function About() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {philosophy.map((p, i) => (
-              <div key={i} className="p-7 bg-cream-50 rounded-2xl border border-cream-200 hover:border-gold-200 hover:shadow-lg hover:shadow-gold-500/8 transition-all duration-300">
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.55, delay: i * 0.1 }}
+                className="p-7 bg-cream-50 rounded-2xl border border-cream-200 hover:border-gold-200 hover:shadow-lg hover:shadow-gold-500/8 transition-all duration-300"
+              >
                 <h3 className="font-heading font-bold text-navy-900 text-base mb-3">{p.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{p.desc}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -206,8 +230,8 @@ export default function About() {
           <h2 className="font-heading text-3xl lg:text-4xl font-bold text-white mb-4">
             Want to work together?
           </h2>
-          <p className="text-white/55 text-lg mb-8">
-            Book a 45-minute strategy session and let's see if we're a fit.
+          <p className="text-white/75 text-lg mb-8">
+            Book a 45-minute strategy session and let&apos;s see if we&apos;re a fit.
           </p>
           <Link
             href="/book-a-call"

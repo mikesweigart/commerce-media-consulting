@@ -134,10 +134,10 @@ export default function HowWeWork() {
                   The Framework
                 </span>
               </div>
-              <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                 Your 5-Part GTM Implementation System
               </h1>
-              <p className="text-white/60 text-lg leading-relaxed">
+              <p className="text-white/80 text-lg leading-relaxed">
                 Not a set of tactics. A complete, sequenced operating model — built
                 for your specific business, implemented with your team, and designed to
                 compound results quarter over quarter.

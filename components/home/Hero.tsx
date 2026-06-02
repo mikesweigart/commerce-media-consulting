@@ -53,7 +53,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 28 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="font-heading text-5xl sm:text-6xl lg:text-[68px] font-bold text-white leading-[1.04] mb-7"
+              className="font-heading text-4xl sm:text-5xl lg:text-[68px] font-bold text-white leading-[1.04] mb-7"
             >
               Turn GTM Chaos Into{" "}
               <span className="text-gold-400">Predictable</span> Growth
@@ -63,7 +63,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 28 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="text-white/60 text-lg leading-relaxed mb-9 max-w-[480px]"
+              className="text-white/80 text-lg leading-relaxed mb-9 max-w-[480px]"
             >
               Your product is better than how it&apos;s being sold. The
               positioning is blurry, the forecast changes every week, and your

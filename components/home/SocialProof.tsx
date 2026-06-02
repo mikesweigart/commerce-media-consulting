@@ -94,7 +94,7 @@ export default function SocialProof() {
                   />
                 )}
               </div>
-              <div className="text-white/45 text-sm font-medium">{stat.label}</div>
+              <div className="text-white/70 text-sm font-medium">{stat.label}</div>
             </motion.div>
           ))}
         </div>
@@ -122,7 +122,7 @@ export default function SocialProof() {
                   </div>
                   <div className="text-left">
                     <div className="text-white font-semibold text-sm">{testimonials[activeIndex].name}</div>
-                    <div className="text-white/40 text-xs">{testimonials[activeIndex].title}</div>
+                    <div className="text-white/65 text-xs">{testimonials[activeIndex].title}</div>
                   </div>
                 </div>
               </motion.div>

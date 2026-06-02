@@ -27,12 +27,13 @@ export default function GrowthAuditPage() {
             </span>
             <div className="h-px w-8 bg-gold-500" />
           </div>
-          <h1 className="font-heading text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
-            Get Your GTM Growth Snapshot
+          <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
+            Find Where Your GTM Is Leaking Revenue
           </h1>
-          <p className="text-white/60 text-lg leading-relaxed">
-            Answer 4 short questions and receive a personalized assessment of where
-            your GTM system stands across the 5-part framework — with specific
+          <p className="text-white/80 text-lg leading-relaxed">
+            Most B2B companies lose deals across 3–5 predictable GTM gaps. This
+            3-minute audit surfaces exactly where yours are — across positioning,
+            pipeline, sales motion, and marketing alignment — with specific
             recommendations for your situation.
           </p>
         </div>

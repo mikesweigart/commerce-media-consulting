@@ -41,7 +41,7 @@ export default function BookingCTA() {
             <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
               Ready to build a GTM system your board trusts?
             </h2>
-            <p className="text-white/55 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-lg leading-relaxed mb-8">
               Pick a time that works for you. No pitch, no pressure — just an
               honest diagnosis of where your GTM stands and a clear picture of
               what a 90-day engagement would produce.
@@ -56,7 +56,7 @@ export default function BookingCTA() {
               ))}
             </ul>
 
-            <div className="flex items-center gap-3 text-white/30 text-xs border-t border-white/10 pt-6">
+            <div className="flex items-center gap-3 text-white/55 text-xs border-t border-white/10 pt-6">
               <Clock size={14} />
               <span>45-minute session · No obligation · Strategy first, sales never</span>
             </div>

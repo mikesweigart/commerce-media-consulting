@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { ArrowRight, TrendingUp, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -101,10 +102,10 @@ export default function Results() {
                 Proof It Works
               </span>
             </div>
-            <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Results our clients see in 6–24 months.
             </h1>
-            <p className="text-white/60 text-lg leading-relaxed">
+            <p className="text-white/80 text-lg leading-relaxed">
               Every metric below comes from an actual client engagement. No aggregated
               industry benchmarks — just what happened when a real team implemented the
               five-part system in their specific business.
@@ -147,14 +148,18 @@ export default function Results() {
           </h2>
           <div className="flex flex-col gap-8">
             {caseStudies.map((cs, i) => (
-              <div
+              <motion.div
                 key={i}
+                initial={{ opacity: 0, y: 28 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
                 className="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-gold-200 hover:shadow-lg transition-all duration-300"
               >
                 <div className="bg-navy-900 px-7 py-5 flex items-center justify-between">
                   <div>
                     <h3 className="font-heading font-bold text-white text-base">{cs.company}</h3>
-                    <p className="text-white/40 text-xs mt-0.5">{cs.segment}</p>
+                    <p className="text-white/65 text-xs mt-0.5">{cs.segment}</p>
                   </div>
                   <span className="text-gold-400 text-xs font-semibold bg-gold-500/10 px-3 py-1.5 rounded-full">
                     {cs.timeframe}
@@ -183,7 +188,7 @@ export default function Results() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -206,7 +211,7 @@ export default function Results() {
                   </div>
                   <div>
                     <div className="text-white text-xs font-semibold">{t.name}</div>
-                    <div className="text-white/40 text-[11px]">{t.title}</div>
+                    <div className="text-white/65 text-[11px]">{t.title}</div>
                   </div>
                 </div>
               </div>

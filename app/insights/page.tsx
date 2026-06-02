@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { ArrowRight, Clock, Tag } from "lucide-react";
 import { articles } from "@/data/insights";
 
@@ -38,28 +39,39 @@ export default function Insights() {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-2xl">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="max-w-2xl"
+          >
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-8 bg-gold-500" />
               <span className="text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">
                 Insights & Frameworks
               </span>
             </div>
-            <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               GTM intelligence for B2B leaders.
             </h1>
-            <p className="text-white/60 text-lg leading-relaxed">
+            <p className="text-white/80 text-lg leading-relaxed">
               Practical frameworks, evidence-based perspectives, and real-world
               applications from 20+ years of building go-to-market systems at
               B2B companies of every size.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Featured Article */}
       <section className="py-16 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
           <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6">
             Featured Article
           </div>
@@ -99,6 +111,7 @@ export default function Insights() {
               </div>
             </div>
           </Link>
+          </motion.div>
         </div>
       </section>
 
@@ -106,11 +119,17 @@ export default function Insights() {
       <section className="py-20 bg-cream-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {rest.map((article) => (
-              <Link
+            {rest.map((article, i) => (
+              <motion.div
                 key={article.slug}
+                initial={{ opacity: 0, y: 28 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
+              >
+              <Link
                 href={`/insights/${article.slug}`}
-                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-gold-200 hover:shadow-xl hover:shadow-gold-500/8 hover:-translate-y-1 transition-all duration-300 flex flex-col"
+                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-gold-200 hover:shadow-xl hover:shadow-gold-500/8 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
               >
                 {/* Card top */}
                 <div className="bg-gradient-to-br from-navy-900 to-navy-800 p-8 flex items-center justify-center h-40">
@@ -140,6 +159,7 @@ export default function Insights() {
                   </div>
                 </div>
               </Link>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -151,7 +171,7 @@ export default function Insights() {
           <h2 className="font-heading text-3xl font-bold text-white mb-4">
             Want to discuss how these frameworks apply to your business?
           </h2>
-          <p className="text-white/55 text-lg mb-8">Book a strategy session with Don.</p>
+          <p className="text-white/75 text-lg mb-8">Book a strategy session with Don.</p>
           <Link
             href="/book-a-call"
             className="group inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold px-10 py-4 rounded-xl transition-all duration-200 text-[15px]"

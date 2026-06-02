@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { ArrowRight, TrendingUp, GitBranch, Search, CheckCircle2, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -92,18 +93,24 @@ export default function ToolsPage() {
               <div className="h-px w-8 bg-gold-500" />
               <span className="text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">Free CPG Strategy Tools</span>
             </div>
-            <h1 className="font-heading text-4xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Answers before<br className="hidden lg:block" /> the conversation.
             </h1>
-            <p className="text-white/60 text-xl leading-relaxed mb-10 max-w-2xl">
+            <p className="text-white/80 text-xl leading-relaxed mb-10 max-w-2xl">
               Three free diagnostic tools built for CPG brand leaders. Know exactly where you stand, which channels to prioritize, and what to fix — before your next buyer meeting.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {stats.map((stat, i) => (
-                <div key={i}>
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.08 }}
+                >
                   <div className="font-heading font-bold text-gold-400 text-xl mb-1">{stat.value}</div>
-                  <div className="text-white/40 text-xs">{stat.label}</div>
-                </div>
+                  <div className="text-white/65 text-xs">{stat.label}</div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -115,8 +122,12 @@ export default function ToolsPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {tools.map((tool, i) => (
-              <div
+              <motion.div
                 key={i}
+                initial={{ opacity: 0, y: 32 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
                 className={`bg-gradient-to-br ${tool.color} border ${tool.border} rounded-2xl p-8 lg:p-10 flex flex-col`}
               >
                 <div className="flex items-start justify-between mb-6">
@@ -154,7 +165,7 @@ export default function ToolsPage() {
                     <ArrowRight size={15} className="transition-transform group-hover:translate-x-0.5" />
                   </Link>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

@@ -26,7 +26,7 @@ export default function Footer() {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-2">
               Ready to build a GTM system your<br className="hidden md:block" /> board trusts?
             </h2>
-            <p className="text-white/50 text-lg">No pitch — just diagnosis and a clear plan.</p>
+            <p className="text-white/75 text-lg">No pitch — just diagnosis and a clear plan.</p>
           </div>
           <Link
             href="/book-a-call"
@@ -52,7 +52,7 @@ export default function Footer() {
                 className="h-10 w-auto object-contain"
               />
             </Link>
-            <p className="text-white/50 text-sm leading-relaxed max-w-sm">
+            <p className="text-white/75 text-sm leading-relaxed max-w-sm">
               B2B go-to-market advisory for CEOs and CROs who want predictable revenue, sharper positioning, and a system their board can trust.
             </p>
             <div className="flex items-center gap-3 mt-6">
@@ -78,7 +78,7 @@ export default function Footer() {
           {/* Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h3 className="font-heading font-semibold text-sm text-white/30 uppercase tracking-widest mb-4">
+              <h3 className="font-heading font-semibold text-sm text-gold-400 uppercase tracking-widest mb-4">
                 {category}
               </h3>
               <ul className="flex flex-col gap-3">
@@ -86,7 +86,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-white/60 hover:text-gold-400 transition-colors"
+                      className="text-sm text-white/80 hover:text-gold-400 transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -97,7 +97,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-white/30 text-xs">
+        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-white/50 text-xs">
           <p>© {new Date().getFullYear()} Commerce Media Consulting Group. All rights reserved.</p>
           <p className="text-center">Don Knapp · Managing Partner</p>
         </div>
