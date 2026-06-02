@@ -78,7 +78,7 @@ export default function About() {
               <div className="relative">
                 <div className="w-72 h-96 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                   <Image
-                    src="/knapppicture.png"
+                    src="/dongreatpicture.png"
                     alt="Don Knapp, Managing Partner at Commerce Media Consulting Group"
                     width={288}
                     height={384}

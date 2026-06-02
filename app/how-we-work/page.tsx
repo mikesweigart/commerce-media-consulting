@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Target,
   Users,
@@ -121,27 +122,50 @@ export default function HowWeWork() {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="max-w-3xl"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-gold-500" />
-              <span className="text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">
-                The Framework
-              </span>
-            </div>
-            <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Your 5-Part GTM Implementation System
-            </h1>
-            <p className="text-white/60 text-lg leading-relaxed max-w-2xl">
-              Not a set of tactics. A complete, sequenced operating model — built
-              for your specific business, implemented with your team, and designed to
-              compound results quarter over quarter.
-            </p>
-          </motion.div>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-px w-8 bg-gold-500" />
+                <span className="text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">
+                  The Framework
+                </span>
+              </div>
+              <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                Your 5-Part GTM Implementation System
+              </h1>
+              <p className="text-white/60 text-lg leading-relaxed">
+                Not a set of tactics. A complete, sequenced operating model — built
+                for your specific business, implemented with your team, and designed to
+                compound results quarter over quarter.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.85, delay: 0.25 }}
+              className="hidden lg:block"
+            >
+              <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/3]">
+                <Image
+                  src="/dontalkingtogroup.png"
+                  alt="Don Knapp presenting to a client team"
+                  fill
+                  className="object-cover object-center"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5">
+                  <p className="text-white/80 text-xs font-medium">
+                    Don works directly with your leadership team — not just as an advisor, but as an embedded implementation partner.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

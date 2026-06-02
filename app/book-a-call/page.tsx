@@ -139,7 +139,7 @@ export default function BookACall() {
                 <div className="bg-navy-900 px-8 py-6">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gold-400">
-                      <Image src="/knapppicture.png" alt="Don Knapp" width={48} height={48} className="w-full h-full object-cover object-top" />
+                      <Image src="/donimage.png" alt="Don Knapp" width={48} height={48} className="w-full h-full object-cover object-top" />
                     </div>
                     <div>
                       <div className="font-heading font-bold text-white text-sm">Don Knapp</div>

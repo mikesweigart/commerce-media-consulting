@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, TrendingUp, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -216,20 +217,34 @@ export default function Results() {
 
       {/* CTA */}
       <section className="py-20 bg-white">
-        <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2 className="font-heading text-3xl lg:text-4xl font-bold text-navy-900 mb-4">
-            Want results like these for your business?
-          </h2>
-          <p className="text-gray-500 text-lg mb-8">
-            Book a strategy session and see how the 5-part framework applies to your specific GTM situation.
-          </p>
-          <Link
-            href="/book-a-call"
-            className="group inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold px-10 py-4 rounded-xl transition-all duration-200 text-[15px]"
-          >
-            Book a Strategy Session
-            <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
-          </Link>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] order-2 lg:order-1">
+              <Image
+                src="/donanotherimage.png"
+                alt="Don Knapp, Managing Partner"
+                fill
+                className="object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/40 via-transparent to-transparent" />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="font-heading text-3xl lg:text-4xl font-bold text-navy-900 mb-4">
+                Want results like these for your business?
+              </h2>
+              <p className="text-gray-500 text-lg mb-8">
+                Book a strategy session and see how the 5-part framework applies to your specific GTM situation. No pitch — just an honest diagnosis and a clear plan.
+              </p>
+              <Link
+                href="/book-a-call"
+                className="group inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold px-10 py-4 rounded-xl transition-all duration-200 text-[15px]"
+              >
+                Book a Strategy Session
+                <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
+              </Link>
+              <p className="text-gray-400 text-xs mt-4">Free · No obligation · Responds within 24 hours</p>
+            </div>
+          </div>
         </div>
       </section>
     </>
