@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { MotionDiv, MotionLi } from "@/components/ui/Motion";
+import BookingFAQ from "@/components/BookingFAQ";
 import { CheckCircle2, Clock, Calendar, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -23,32 +24,6 @@ const whatYouLeave = [
   "A clear sense of whether working together makes sense — and what that looks like",
 ];
 
-const faq = [
-  {
-    q: "What happens in the strategy session?",
-    a: "The first 20 minutes are diagnosis — you share your current GTM situation, pains, and goals. The next 20 minutes are analysis — I share what I'm seeing and map your gaps to the five-part framework. The last 5 minutes are forward-looking — we discuss whether working together makes sense and what that would look like. It's a working session, not a sales presentation.",
-  },
-  {
-    q: "Is there any cost for the strategy session?",
-    a: "No. The session is free and there's no obligation to engage afterward. My goal is for you to leave with two or three genuinely useful insights regardless of whether we work together.",
-  },
-  {
-    q: "Who should attend from our team?",
-    a: "The CEO/Founder and/or CRO. The session is most useful when the person who owns the GTM outcome is in the room. If you have a VP Sales or CMO who is deeply involved in the GTM strategy, they're welcome to join.",
-  },
-  {
-    q: "What if we're not ready to engage right now?",
-    a: "That's fine. Many clients book a strategy session 6–12 months before they're ready to engage. The session is useful on its own, and you'll know where to find me when the timing is right.",
-  },
-  {
-    q: "How do you price engagements?",
-    a: "Engagements are priced as fixed-scope projects, typically over a 90-day period. Pricing is based on the scope of the five-part system being implemented — which we'll discuss if the session confirms we're a fit. I work with companies at $2M to $100M+ ARR.",
-  },
-  {
-    q: "How many clients do you work with at a time?",
-    a: "A maximum of four active client engagements at any point. This allows me to bring the attention each engagement requires. If I'm at capacity, I'll let you know in the session and we'll discuss a timeline.",
-  },
-];
 
 export default function BookACall() {
   return (
@@ -249,14 +224,7 @@ export default function BookACall() {
           <h2 className="font-heading text-3xl font-bold text-navy-900 mb-12 text-center">
             Frequently asked questions
           </h2>
-          <div className="flex flex-col divide-y divide-gray-100">
-            {faq.map((item, i) => (
-              <div key={i} className="py-7">
-                <h3 className="font-heading font-semibold text-navy-900 text-base mb-3">{item.q}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
-              </div>
-            ))}
-          </div>
+          <BookingFAQ />
         </div>
       </section>
     </>

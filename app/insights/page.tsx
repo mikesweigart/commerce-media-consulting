@@ -154,11 +154,15 @@ export default function Insights() {
                 className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-gold-200 hover:shadow-xl hover:shadow-gold-500/8 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
               >
                 {/* Card top */}
-                <div className="bg-gradient-to-br from-navy-900 to-navy-800 p-8 flex items-center justify-center h-40">
-                  <div className="text-center">
-                    <span className={`inline-block text-[10px] font-bold px-2.5 py-1 rounded-full ${categoryColors[article.category] || "bg-gray-100 text-gray-700"}`}>
-                      {article.category}
-                    </span>
+                <div className="bg-gradient-to-br from-navy-900 to-navy-800 px-8 py-7 flex flex-col justify-between h-44">
+                  <span className={`inline-block self-start text-[10px] font-bold px-2.5 py-1 rounded-full ${categoryColors[article.category] || "bg-gray-100 text-gray-700"}`}>
+                    {article.category}
+                  </span>
+                  <div>
+                    <div className="text-white/20 text-4xl font-serif leading-none mb-1">"</div>
+                    <p className="text-white/60 text-xs font-light italic leading-relaxed line-clamp-2">
+                      {article.excerpt.substring(0, 90)}…
+                    </p>
                   </div>
                 </div>
 

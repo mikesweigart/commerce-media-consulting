@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import GrowthAudit from "@/components/GrowthAudit";
+import { MotionDiv } from "@/components/ui/Motion";
 
 export const metadata: Metadata = {
   title: "Growth Audit",
@@ -20,22 +21,28 @@ export default function GrowthAuditPage() {
           }}
         />
         <div className="relative max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="h-px w-8 bg-gold-500" />
-            <span className="text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">
-              3-Minute Assessment
-            </span>
-            <div className="h-px w-8 bg-gold-500" />
-          </div>
-          <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
-            Find Where Your GTM Is Leaking Revenue
-          </h1>
-          <p className="text-white/80 text-lg leading-relaxed">
-            Most B2B companies lose deals across 3–5 predictable GTM gaps. This
-            3-minute audit surfaces exactly where yours are — across positioning,
-            pipeline, sales motion, and marketing alignment — with specific
-            recommendations for your situation.
-          </p>
+          <MotionDiv
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-px w-8 bg-gold-500" />
+              <span className="text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">
+                3-Minute Assessment
+              </span>
+              <div className="h-px w-8 bg-gold-500" />
+            </div>
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
+              Find Where Your GTM Is Leaking Revenue
+            </h1>
+            <p className="text-white/80 text-lg leading-relaxed">
+              Most B2B companies lose deals across 3–5 predictable GTM gaps. This
+              3-minute audit surfaces exactly where yours are — across positioning,
+              pipeline, sales motion, and marketing alignment — with specific
+              recommendations for your situation.
+            </p>
+          </MotionDiv>
         </div>
       </section>
 
