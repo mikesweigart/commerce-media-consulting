@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { MotionDiv } from "@/components/ui/Motion";
 import { ArrowRight, Clock, Tag } from "lucide-react";
 import { articles } from "@/data/insights";
 
@@ -41,7 +41,7 @@ export default function Insights() {
         />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
@@ -60,8 +60,8 @@ export default function Insights() {
                 applications from 20+ years of building go-to-market systems at
                 B2B companies of every size.
               </p>
-            </motion.div>
-            <motion.div
+            </MotionDiv>
+            <MotionDiv
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.85, delay: 0.2 }}
@@ -80,7 +80,7 @@ export default function Insights() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/40 via-transparent to-transparent" />
               </div>
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function Insights() {
       {/* Featured Article */}
       <section className="py-16 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -133,7 +133,7 @@ export default function Insights() {
               </div>
             </div>
           </Link>
-          </motion.div>
+          </MotionDiv>
         </div>
       </section>
 
@@ -142,7 +142,7 @@ export default function Insights() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {rest.map((article, i) => (
-              <motion.div
+              <MotionDiv
                 key={article.slug}
                 initial={{ opacity: 0, y: 28 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -181,7 +181,7 @@ export default function Insights() {
                   </div>
                 </div>
               </Link>
-              </motion.div>
+              </MotionDiv>
             ))}
           </div>
         </div>

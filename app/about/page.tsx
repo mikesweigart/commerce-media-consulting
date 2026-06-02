@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { motion } from "framer-motion";
+import { MotionDiv, MotionLi } from "@/components/ui/Motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, Quote } from "lucide-react";
@@ -52,7 +52,7 @@ export default function About() {
         />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 28 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
@@ -77,9 +77,9 @@ export default function About() {
                 your customers, and your team&apos;s real capabilities — then builds from
                 there. He&apos;s not here to sell a methodology. He&apos;s here to fix your GTM.
               </p>
-            </motion.div>
+            </MotionDiv>
             {/* Photo */}
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.85, delay: 0.25 }}
@@ -101,7 +101,7 @@ export default function About() {
                   <div className="text-[10px] opacity-70">GTM Leadership</div>
                 </div>
               </div>
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </section>
@@ -160,7 +160,7 @@ export default function About() {
               <h2 className="font-heading text-3xl font-bold text-navy-900 mb-8">Experience & Credentials</h2>
               <ul className="flex flex-col gap-4">
                 {credentials.map((c, i) => (
-                  <motion.li
+                  <MotionLi
                     key={i}
                     initial={{ opacity: 0, x: -16 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -170,7 +170,7 @@ export default function About() {
                   >
                     <CheckCircle2 size={18} className="text-gold-500 flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700 text-sm leading-relaxed">{c}</span>
-                  </motion.li>
+                  </MotionLi>
                 ))}
               </ul>
             </div>
@@ -208,7 +208,7 @@ export default function About() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {philosophy.map((p, i) => (
-              <motion.div
+              <MotionDiv
                 key={i}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -218,7 +218,7 @@ export default function About() {
               >
                 <h3 className="font-heading font-bold text-navy-900 text-base mb-3">{p.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{p.desc}</p>
-              </motion.div>
+              </MotionDiv>
             ))}
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { MotionDiv } from "@/components/ui/Motion";
 import { ArrowRight, TrendingUp, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -96,7 +96,7 @@ export default function Results() {
         />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.85, delay: 0.2 }}
@@ -115,8 +115,8 @@ export default function Results() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/40 via-transparent to-transparent" />
               </div>
-            </motion.div>
-            <motion.div
+            </MotionDiv>
+            <MotionDiv
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
@@ -135,7 +135,7 @@ export default function Results() {
                 industry benchmarks — just what happened when a real team implemented the
                 five-part system in their specific business.
               </p>
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </section>
@@ -174,7 +174,7 @@ export default function Results() {
           </h2>
           <div className="flex flex-col gap-8">
             {caseStudies.map((cs, i) => (
-              <motion.div
+              <MotionDiv
                 key={i}
                 initial={{ opacity: 0, y: 28 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -214,7 +214,7 @@ export default function Results() {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </MotionDiv>
             ))}
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { MotionDiv, MotionLi } from "@/components/ui/Motion";
 import { CheckCircle2, Clock, Calendar, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -64,7 +64,7 @@ export default function BookACall() {
         />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
@@ -83,8 +83,8 @@ export default function BookACall() {
                 and what to fix first — across positioning, pipeline, playbook, and marketing
                 alignment. No pitch, no pressure. Just an honest diagnosis and a clear plan.
               </p>
-            </motion.div>
-            <motion.div
+            </MotionDiv>
+            <MotionDiv
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.85, delay: 0.2 }}
@@ -105,7 +105,7 @@ export default function BookACall() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </section>
@@ -126,7 +126,7 @@ export default function BookACall() {
                 </h3>
                 <ul className="flex flex-col gap-3">
                   {whatToBring.map((item, i) => (
-                    <motion.li
+                    <MotionLi
                       key={i}
                       initial={{ opacity: 0, x: -16 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -138,7 +138,7 @@ export default function BookACall() {
                         <span className="text-navy-700 text-[10px] font-bold">{i + 1}</span>
                       </div>
                       <span className="text-gray-600 text-sm leading-relaxed">{item}</span>
-                    </motion.li>
+                    </MotionLi>
                   ))}
                 </ul>
               </div>
@@ -149,7 +149,7 @@ export default function BookACall() {
                 </h3>
                 <ul className="flex flex-col gap-3">
                   {whatYouLeave.map((item, i) => (
-                    <motion.li
+                    <MotionLi
                       key={i}
                       initial={{ opacity: 0, x: -16 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -159,7 +159,7 @@ export default function BookACall() {
                     >
                       <CheckCircle2 size={16} className="text-gold-500 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-600 text-sm leading-relaxed">{item}</span>
-                    </motion.li>
+                    </MotionLi>
                   ))}
                 </ul>
               </div>
@@ -178,7 +178,7 @@ export default function BookACall() {
             </div>
 
             {/* Right: booking card */}
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -238,7 +238,7 @@ export default function BookACall() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </section>
