@@ -41,10 +41,18 @@ export default function BookingCTA() {
             <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
               Ready to build a GTM system your board trusts?
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Pick a time that works for you. No pitch, no pressure — just an
-              honest diagnosis of where your GTM stands and a clear picture of
-              what a 90-day engagement would produce.
+            <p className="text-white/80 text-lg leading-relaxed mb-5">
+              Imagine walking into your next board meeting with a forecast that
+              doesn&apos;t change by 40% overnight. Imagine every rep delivering
+              the same sharp positioning narrative — and buyers understanding
+              your differentiation before the demo is over. Imagine a pipeline
+              that fills predictably, not randomly. That&apos;s what a working
+              GTM system produces.
+            </p>
+            <p className="text-white/60 text-base leading-relaxed mb-8">
+              The 45-minute strategy session is where it starts. No pitch, no
+              pressure — just an honest diagnosis of where your GTM stands and a
+              clear picture of what 90 days of focused work would produce.
             </p>
 
             <ul className="flex flex-col gap-4 mb-10">
@@ -80,34 +88,34 @@ export default function BookingCTA() {
                 </div>
               </div>
 
-              {/* Calendly placeholder */}
-              <div className="bg-cream-100 rounded-xl p-8 mb-6 text-center border-2 border-dashed border-cream-200">
-                <div className="text-navy-400 text-sm mb-3">📅 Calendar Integration</div>
-                <p className="text-gray-500 text-xs leading-relaxed mb-4">
-                  Add your Calendly, HubSpot Meetings, or Chili Piper embed URL here to enable live booking.
+              {/* Coming soon scheduling notice */}
+              <div className="bg-cream-100 rounded-xl p-6 mb-5 text-center border border-cream-200">
+                <div className="w-9 h-9 rounded-full bg-navy-100 flex items-center justify-center mx-auto mb-2.5">
+                  <TrendingUp size={16} className="text-navy-500" />
+                </div>
+                <p className="text-navy-800 text-sm font-semibold mb-1">Live Scheduling Coming Soon</p>
+                <p className="text-gray-500 text-xs leading-relaxed">
+                  Don&apos;s calendar will be bookable directly here. In the meantime, reach out by email or visit the booking page.
                 </p>
-                <a
-                  href="https://calendly.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-navy-900 text-white text-xs font-semibold px-5 py-2.5 rounded-lg hover:bg-navy-800 transition-colors"
-                >
-                  Configure Booking Link →
-                </a>
               </div>
-
-              <p className="text-center text-gray-400 text-xs mb-5">— or —</p>
 
               <Link
                 href="/book-a-call"
-                className="group flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold py-4 px-6 rounded-xl transition-all duration-200 text-[15px] shadow-md shadow-gold-500/20 w-full"
+                className="group flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold py-4 px-6 rounded-xl transition-all duration-200 text-[15px] shadow-md shadow-gold-500/20 w-full mb-3"
               >
-                See Full Booking Page
+                Go to Booking Page
                 <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
               </Link>
 
+              <a
+                href="mailto:don.knapp.cmcg@gmail.com?subject=Growth%20Strategy%20Session%20Request"
+                className="flex items-center justify-center gap-2 border border-gray-200 hover:border-gray-300 text-gray-600 hover:text-navy-900 font-medium py-3.5 px-6 rounded-xl transition-all duration-200 text-sm w-full"
+              >
+                Email Don Directly
+              </a>
+
               <p className="text-center text-gray-400 text-xs mt-4">
-                Typically responds within 24 hours · Free, no-obligation session
+                Free · No obligation · Responds within 24 hours
               </p>
             </div>
           </motion.div>

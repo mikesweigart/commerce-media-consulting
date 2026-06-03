@@ -96,26 +96,44 @@ export default function PainPoints() {
           ))}
         </motion.div>
 
+        {/* Failure stakes */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.55 }}
+          className="mt-10 p-6 bg-red-50 border border-red-100 rounded-2xl"
+        >
+          <p className="font-heading font-semibold text-red-900 text-base mb-1.5">
+            Left unchecked, these problems compound — and they don&apos;t self-correct.
+          </p>
+          <p className="text-red-700/80 text-sm leading-relaxed">
+            Win rates stagnate. CAC climbs quarter after quarter. Boards lose faith in the GTM story.
+            And eventually — a few missed quarters in — the window to fix it narrows significantly.
+            The companies that don&apos;t build a system in years 2–4 spend years 5–7 defending
+            ground they never fully captured.
+          </p>
+        </motion.div>
+
         {/* Bridge to guide */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.65 }}
-          className="mt-14 p-8 lg:p-10 bg-navy-900 rounded-2xl flex flex-col md:flex-row items-start md:items-center gap-6"
+          transition={{ duration: 0.65, delay: 0.1 }}
+          className="mt-4 p-8 lg:p-10 bg-navy-900 rounded-2xl flex flex-col md:flex-row items-start md:items-center gap-6"
         >
           <div className="w-12 h-12 rounded-xl bg-gold-500/20 border border-gold-500/30 flex items-center justify-center flex-shrink-0 text-gold-400 text-xl font-bold">
             →
           </div>
           <div>
             <p className="font-heading font-semibold text-white text-lg mb-1.5">
-              "I've worked with dozens of teams in exactly this spot."
+              &ldquo;Every one of these problems is fixable. Most companies just don&apos;t know where to start.&rdquo;
             </p>
-            <p className="text-white/50 text-sm leading-relaxed">
-              Don Knapp has helped B2B companies fix every one of these breaking
-              points with a structured, evidence-backed five-part system — not
-              another set of tactics, but a complete GTM operating model that
-              your whole team can execute.
+            <p className="text-white/65 text-sm leading-relaxed">
+              Don Knapp has fixed all five breaking points with a structured, evidence-backed
+              five-part system — at 47+ companies, from the same operator seat you&apos;re in now.
+              Not another set of tactics. A complete GTM operating model your whole team can execute.
             </p>
           </div>
         </motion.div>

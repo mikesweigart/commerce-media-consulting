@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { MotionDiv } from "@/components/ui/Motion";
+import InsightsNewsletter from "@/components/InsightsNewsletter";
 import { ArrowRight, Clock, Tag } from "lucide-react";
 import { articles } from "@/data/insights";
 
@@ -190,6 +191,9 @@ export default function Insights() {
           </div>
         </div>
       </section>
+
+      {/* Newsletter */}
+      <InsightsNewsletter />
 
       {/* Bottom CTA */}
       <section className="py-20 bg-navy-900">

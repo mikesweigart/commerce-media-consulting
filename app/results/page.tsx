@@ -195,11 +195,11 @@ export default function Results() {
                   <div className="grid md:grid-cols-3 gap-7">
                     <div>
                       <h4 className="font-heading font-semibold text-navy-900 text-sm mb-2">The Situation</h4>
-                      <p className="text-gray-600 text-xs leading-relaxed">{cs.situation}</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{cs.situation}</p>
                     </div>
                     <div>
                       <h4 className="font-heading font-semibold text-navy-900 text-sm mb-2">The Plan</h4>
-                      <p className="text-gray-600 text-xs leading-relaxed">{cs.plan}</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{cs.plan}</p>
                     </div>
                     <div>
                       <h4 className="font-heading font-semibold text-navy-900 text-sm mb-2">The Results</h4>
@@ -207,7 +207,7 @@ export default function Results() {
                         {cs.results.map((r, ri) => (
                           <div key={ri} className="flex items-start gap-2">
                             <span className="font-bold text-gold-600 text-sm flex-shrink-0 min-w-[48px]">{r.metric}</span>
-                            <span className="text-gray-600 text-xs leading-snug">{r.label}</span>
+                            <span className="text-gray-600 text-sm leading-snug">{r.label}</span>
                           </div>
                         ))}
                       </div>

@@ -4,8 +4,8 @@ import { MotionDiv } from "@/components/ui/Motion";
 import { ArrowRight, TrendingUp, GitBranch, Search, CheckCircle2, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Free CPG Strategy Tools | Commerce Media Consulting Group",
-  description: "Free interactive tools for CPG brand leaders: assess your retail readiness and prioritize your distribution channels — with instant, personalized results.",
+  title: "Free B2B & CPG Strategy Tools | Commerce Media Consulting Group",
+  description: "Free interactive diagnostic tools for B2B and CPG leaders: assess your GTM readiness, prioritize channels, and surface your highest-leverage growth opportunities — with instant results.",
 };
 
 const tools = [
@@ -13,6 +13,8 @@ const tools = [
     href: "/tools/retail-readiness",
     icon: TrendingUp,
     badge: "Retail Strategy",
+    audience: "For CPG Brands",
+    audienceColor: "bg-orange-100 text-orange-700",
     title: "Retail Readiness Scorecard",
     description: "Six questions that reveal exactly where your brand stands before your next category review — scored across market proof, financial architecture, and sales infrastructure.",
     time: "4 minutes",
@@ -33,8 +35,10 @@ const tools = [
     href: "/tools/channel-prioritization",
     icon: GitBranch,
     badge: "Channel Strategy",
+    audience: "For CPG Brands",
+    audienceColor: "bg-orange-100 text-orange-700",
     title: "Channel Prioritization Matrix",
-    description: "Eight questions that rank all eight major CPG channels by compatibility with your specific brand profile, strategic goals, and operational capacity — so you invest where it counts.",
+    description: "Eight questions that rank all eight major retail and DTC channels by compatibility with your specific brand profile, strategic goals, and operational capacity — so you invest where it counts.",
     time: "5 minutes",
     outputs: [
       "All 8 channels ranked by compatibility score",
@@ -53,14 +57,16 @@ const tools = [
     href: "/growth-audit",
     icon: Search,
     badge: "GTM Diagnosis",
+    audience: "For B2B Companies",
+    audienceColor: "bg-emerald-100 text-emerald-700",
     title: "3-Minute Growth Audit",
     description: "A rapid diagnostic that surfaces exactly where your go-to-market is leaking revenue — across positioning, sales motion, pipeline health, and marketing alignment.",
     time: "3 minutes",
     outputs: [
-      "Personalized GTM gap analysis across 4 dimensions",
+      "Personalized GTM gap analysis across 5 framework parts",
       "Ranked list of your highest-leverage fixes",
       "Clear next step based on your specific situation",
-      "Option to book a free 30-min debrief with Don",
+      "Option to book a free 45-min debrief with Don",
     ],
     cta: "Start the Audit",
     color: "from-emerald-500/10 to-emerald-600/5",
@@ -91,13 +97,16 @@ export default function ToolsPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-8 bg-gold-500" />
-              <span className="text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">Free CPG Strategy Tools</span>
+              <span className="text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">Free Strategy Tools</span>
             </div>
             <h1 className="font-heading text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Answers before<br className="hidden lg:block" /> the conversation.
             </h1>
-            <p className="text-white/80 text-xl leading-relaxed mb-10 max-w-2xl">
-              Three free diagnostic tools built for CPG brand leaders. Know exactly where you stand, which channels to prioritize, and what to fix — before your next buyer meeting.
+            <p className="text-white/80 text-xl leading-relaxed mb-4 max-w-2xl">
+              Three free diagnostic tools for B2B and CPG leaders. Know exactly where you stand, which channels to prioritize, and what to fix — before your next buyer meeting.
+            </p>
+            <p className="text-white/55 text-sm leading-relaxed mb-10 max-w-2xl">
+              Commerce Media Consulting Group serves B2B companies through our GTM advisory practice and CPG brands through our retail strategy consulting. These tools serve both markets — each labeled so you can go straight to the one that fits.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {stats.map((stat, i) => (
@@ -134,7 +143,10 @@ export default function ToolsPage() {
                   <div className={`w-12 h-12 rounded-xl ${tool.iconBg} flex items-center justify-center`}>
                     <tool.icon size={22} className={tool.iconColor} />
                   </div>
-                  <span className={`text-xs font-bold px-3 py-1.5 rounded-full ${tool.badgeColor}`}>{tool.badge}</span>
+                  <div className="flex flex-col items-end gap-1.5">
+                    <span className={`text-xs font-bold px-3 py-1.5 rounded-full ${tool.badgeColor}`}>{tool.badge}</span>
+                    <span className={`text-[10px] font-semibold px-2.5 py-1 rounded-full ${tool.audienceColor}`}>{tool.audience}</span>
+                  </div>
                 </div>
 
                 <h2 className="font-heading text-2xl font-bold text-navy-900 mb-3">{tool.title}</h2>

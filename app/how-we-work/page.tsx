@@ -16,6 +16,14 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+const partColors = [
+  { iconBgOpen: "bg-blue-500",   iconBgClosed: "bg-blue-100",   iconColorOpen: "text-white", iconColorClosed: "text-blue-700",   borderOpen: "border-blue-300 shadow-blue-500/8" },
+  { iconBgOpen: "bg-violet-500", iconBgClosed: "bg-violet-100", iconColorOpen: "text-white", iconColorClosed: "text-violet-700", borderOpen: "border-violet-300 shadow-violet-500/8" },
+  { iconBgOpen: "bg-emerald-500",iconBgClosed: "bg-emerald-100",iconColorOpen: "text-white", iconColorClosed: "text-emerald-700",borderOpen: "border-emerald-300 shadow-emerald-500/8" },
+  { iconBgOpen: "bg-orange-500", iconBgClosed: "bg-orange-100", iconColorOpen: "text-white", iconColorClosed: "text-orange-700", borderOpen: "border-orange-300 shadow-orange-500/8" },
+  { iconBgOpen: "bg-gold-500",   iconBgClosed: "bg-gold-100",   iconColorOpen: "text-navy-900",iconColorClosed: "text-gold-700", borderOpen: "border-gold-300 shadow-gold-500/8" },
+];
+
 const parts = [
   {
     number: "01",
@@ -175,6 +183,7 @@ export default function HowWeWork() {
           <div className="flex flex-col gap-4">
             {parts.map((part, i) => {
               const isOpen = activeIndex === i;
+              const colors = partColors[i];
               return (
                 <motion.div
                   key={i}
@@ -183,7 +192,7 @@ export default function HowWeWork() {
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.5, delay: i * 0.07 }}
                   className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
-                    isOpen ? "border-gold-300 shadow-lg shadow-gold-500/8" : "border-gray-100 hover:border-gray-200"
+                    isOpen ? `${colors.borderOpen} shadow-lg` : "border-gray-100 hover:border-gray-200"
                   }`}
                 >
                   <button
@@ -192,9 +201,9 @@ export default function HowWeWork() {
                     aria-expanded={isOpen}
                   >
                     <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors ${
-                      isOpen ? "bg-gold-500" : "bg-cream-100"
+                      isOpen ? colors.iconBgOpen : colors.iconBgClosed
                     }`}>
-                      <part.icon size={20} className={isOpen ? "text-navy-900" : "text-navy-600"} />
+                      <part.icon size={20} className={isOpen ? colors.iconColorOpen : colors.iconColorClosed} />
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">

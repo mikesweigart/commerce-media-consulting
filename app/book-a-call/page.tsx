@@ -162,54 +162,47 @@ export default function BookACall() {
             >
               <div className="bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden">
                 <div className="bg-navy-900 px-8 py-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gold-400">
-                      <Image src="/donimage.png" alt="Don Knapp" width={48} height={48} className="w-full h-full object-cover object-top" />
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gold-400">
+                        <Image src="/donimage.png" alt="Don Knapp" width={48} height={48} className="w-full h-full object-cover object-top" />
+                      </div>
+                      <div>
+                        <div className="font-heading font-bold text-white text-sm">Don Knapp</div>
+                        <div className="text-white/50 text-xs">Managing Partner · Commerce Media Consulting Group</div>
+                      </div>
                     </div>
-                    <div>
-                      <div className="font-heading font-bold text-white text-sm">Don Knapp</div>
-                      <div className="text-white/50 text-xs">Managing Partner · Commerce Media Consulting Group</div>
+                    <div className="flex items-center gap-1.5 bg-emerald-500/15 border border-emerald-500/30 rounded-full px-3 py-1.5">
+                      <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                      <span className="text-emerald-300 text-[10px] font-semibold whitespace-nowrap">2 of 4 spots open</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="p-8">
-                  {/* Calendly placeholder */}
-                  <div className="bg-cream-50 border-2 border-dashed border-cream-200 rounded-xl p-10 mb-6 text-center">
-                    <Calendar size={32} className="text-navy-300 mx-auto mb-3" />
-                    <p className="font-heading font-semibold text-navy-700 text-sm mb-2">
-                      Calendar Booking
+                  {/* Live scheduling coming soon */}
+                  <div className="bg-cream-50 border border-cream-200 rounded-xl p-7 mb-6 text-center">
+                    <div className="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center mx-auto mb-3">
+                      <Calendar size={18} className="text-navy-500" />
+                    </div>
+                    <p className="font-heading font-semibold text-navy-800 text-sm mb-1">
+                      Live Scheduling Coming Very Soon
                     </p>
-                    <p className="text-gray-500 text-xs leading-relaxed mb-4">
-                      Add your Calendly, HubSpot Meetings, or Chili Piper embed URL to enable live scheduling. Replace this section with:
+                    <p className="text-gray-500 text-xs leading-relaxed">
+                      Don&apos;s calendar will be bookable directly here. In the meantime, lock in your session by emailing Don below — he responds within 24 hours.
                     </p>
-                    <code className="bg-gray-100 text-gray-600 text-xs px-3 py-1.5 rounded-lg block mb-4">
-                      {"<iframe src='your-booking-url' />"}
-                    </code>
-                    <a
-                      href="https://calendly.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block text-xs font-semibold text-gold-600 hover:text-gold-700 transition-colors"
-                    >
-                      Set up Calendly free →
-                    </a>
                   </div>
 
-                  <p className="text-center text-gray-400 text-xs mb-5">
-                    — or reach out directly —
-                  </p>
-
                   <a
-                    href="mailto:don@commercemediaconsulting.com?subject=Growth%20Strategy%20Session%20Request"
+                    href="mailto:don.knapp.cmcg@gmail.com?subject=Growth%20Strategy%20Session%20Request"
                     className="group flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold py-4 px-6 rounded-xl transition-all duration-200 text-[15px] w-full"
                   >
-                    Email Don Directly
+                    Email Don to Book Your Session
                     <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
                   </a>
 
                   <p className="text-center text-gray-400 text-xs mt-4">
-                    Responds within 24 hours on business days
+                    Responds within 24 hours on business days · Free · No obligation
                   </p>
                 </div>
               </div>

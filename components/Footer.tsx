@@ -69,7 +69,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="mailto:don@commercemediaconsulting.com"
+                href="mailto:don.knapp.cmcg@gmail.com"
                 className="w-9 h-9 rounded-lg bg-white/10 hover:bg-gold-500 hover:text-navy-900 flex items-center justify-center transition-all duration-200 text-white/60"
                 aria-label="Email"
               >

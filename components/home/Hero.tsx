@@ -68,7 +68,10 @@ export default function Hero() {
               Your product is better than how it&apos;s being sold. The
               positioning is blurry, the forecast changes every week, and your
               board wants confidence you can&apos;t give them yet. Don Knapp
-              builds the GTM system that fixes all three — in 90 days.
+              spent 20 years fixing exactly this problem from inside companies
+              like yours — as VP Sales, CMO, and CRO — before building this
+              practice. He can solve it faster because he&apos;s been in your
+              seat.
             </motion.p>
 
             <motion.ul
@@ -91,21 +94,30 @@ export default function Hero() {
               initial={{ opacity: 0, y: 28 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4"
             >
-              <Link
-                href="/book-a-call"
-                className="group flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-gold-500/25 text-[15px]"
-              >
-                Book a Growth Strategy Session
-                <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
-              </Link>
-              <Link
-                href="/growth-audit"
-                className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 hover:bg-white/5 text-white font-medium px-8 py-4 rounded-xl transition-all duration-200 text-[15px]"
-              >
-                Start the 3-Minute Audit
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 mb-6">
+                <Link
+                  href="/book-a-call"
+                  className="group flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-gold-500/25 text-[15px]"
+                >
+                  Book a Growth Strategy Session
+                  <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
+                </Link>
+                <Link
+                  href="/growth-audit"
+                  className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 hover:bg-white/5 text-white font-medium px-8 py-4 rounded-xl transition-all duration-200 text-[15px]"
+                >
+                  Start the 3-Minute Audit
+                </Link>
+              </div>
+              {/* Mobile-only trust bar */}
+              <div className="flex items-center gap-2 lg:hidden flex-wrap">
+                <span className="text-white/45 text-xs">47+ Systems Built</span>
+                <span className="text-white/20 text-xs">·</span>
+                <span className="text-white/45 text-xs">$2.4B+ Influenced</span>
+                <span className="text-white/20 text-xs">·</span>
+                <span className="text-white/45 text-xs">90-Day Results</span>
+              </div>
             </motion.div>
           </div>
 
