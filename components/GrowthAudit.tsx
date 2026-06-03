@@ -254,7 +254,7 @@ export default function GrowthAudit() {
     if (step === 0) return data.companyName.trim() !== "" && data.revenueBand !== "" && data.industry !== "";
     if (step === 1) return data.selectedChannels.length > 0;
     if (step === 2) return data.selectedPains.length > 0 && data.growthTarget !== "";
-    if (step === 3) return data.name.trim() !== "" && data.email.includes("@") && data.role !== "";
+    if (step === 3) return data.email.includes("@") && data.email.includes(".");
     return true;
   }
 
@@ -278,7 +278,7 @@ export default function GrowthAudit() {
               {data.companyName ? data.companyName + "'s" : "Your"} GTM Assessment
             </h2>
             <p className="text-white/55 text-sm">
-              Based on your inputs, here's where your five-part GTM system stands today.
+              Based on your inputs, here's where your Revenue Architecture stands today.
             </p>
             <div className="flex justify-center gap-6 mt-6">
               <div className="text-center">
@@ -561,57 +561,33 @@ export default function GrowthAudit() {
             {step === 3 && (
               <div className="space-y-6">
                 <div>
-                  <h2 className="font-heading text-2xl font-bold text-navy-900 mb-1">Almost done — who should we address this to?</h2>
-                  <p className="text-gray-500 text-sm">Your personalized 5-part growth snapshot is ready after this step.</p>
-                </div>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-semibold text-navy-800 mb-2">Your Name</label>
-                    <input
-                      type="text"
-                      placeholder="Jane Smith"
-                      value={data.name}
-                      onChange={(e) => setData({ ...data, name: e.target.value })}
-                      className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none transition-all"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-navy-800 mb-2">Work Email</label>
-                    <input
-                      type="email"
-                      placeholder="jane@company.com"
-                      value={data.email}
-                      onChange={(e) => setData({ ...data, email: e.target.value })}
-                      className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none transition-all"
-                    />
-                  </div>
+                  <h2 className="font-heading text-2xl font-bold text-navy-900 mb-1">Where should we send your snapshot?</h2>
+                  <p className="text-gray-500 text-sm">Enter your email and we&apos;ll generate your personalized GTM report.</p>
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-navy-800 mb-2">Your Role</label>
-                  <select
-                    value={data.role}
-                    onChange={(e) => setData({ ...data, role: e.target.value })}
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none transition-all bg-white"
-                  >
-                    <option value="">Select your role</option>
-                    {roles.map((r) => (
-                      <option key={r} value={r}>{r}</option>
-                    ))}
-                  </select>
+                  <label className="block text-sm font-semibold text-navy-800 mb-2">
+                    Work Email <span className="text-gold-600">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="jane@company.com"
+                    value={data.email}
+                    onChange={(e) => setData({ ...data, email: e.target.value })}
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none transition-all"
+                  />
                 </div>
-                <label className="flex items-start gap-3 cursor-pointer">
-                  <div
-                    onClick={() => setData({ ...data, wantsEmail: !data.wantsEmail })}
-                    className={`w-5 h-5 rounded-md border-2 flex items-center justify-center flex-shrink-0 mt-0.5 transition-colors cursor-pointer ${
-                      data.wantsEmail ? "bg-gold-500 border-gold-500" : "border-gray-300"
-                    }`}
-                  >
-                    {data.wantsEmail && <CheckCircle2 size={12} className="text-navy-900" />}
-                  </div>
-                  <span className="text-sm text-gray-600 leading-relaxed">
-                    Email me a copy of my growth snapshot so I can share it with my team.
-                  </span>
-                </label>
+                <div>
+                  <label className="block text-sm font-semibold text-navy-800 mb-2">
+                    Your Name <span className="text-gray-400 font-normal text-xs">(optional)</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Jane Smith"
+                    value={data.name}
+                    onChange={(e) => setData({ ...data, name: e.target.value })}
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none transition-all"
+                  />
+                </div>
               </div>
             )}
           </motion.div>
@@ -638,7 +614,7 @@ export default function GrowthAudit() {
               : "bg-gray-100 text-gray-400 cursor-not-allowed"
           }`}
         >
-          {step === STEPS.length - 1 ? "View My Growth Snapshot" : "Continue"}
+          {step === STEPS.length - 1 ? "Get My Report" : "Continue"}
           <ArrowRight size={17} className={isStepValid() ? "transition-transform group-hover:translate-x-1" : ""} />
         </button>
       </div>

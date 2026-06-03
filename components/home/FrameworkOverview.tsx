@@ -95,7 +95,7 @@ export default function FrameworkOverview() {
             <div className="h-px w-8 bg-gold-500" />
           </div>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-navy-900 leading-tight mb-5">
-            The 5-Part GTM Growth System
+            The Revenue Architecture
           </h2>
           <p className="text-gray-500 text-lg leading-relaxed">
             Not a set of tactics. A complete operating model — built in sequence,

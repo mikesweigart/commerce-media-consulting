@@ -16,15 +16,15 @@ export default function LogoBar() {
   return (
     <section className="py-10 bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <motion.p
+        <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center text-gray-400 text-[11px] font-semibold tracking-[0.2em] uppercase mb-5"
         >
-          GTM systems built for growth-stage leaders across
-        </motion.p>
+          B2B GTM systems built for growth-stage leaders across
+        </motion.h2>
         <div className="flex flex-wrap items-center justify-center gap-2">
           {sectors.map((sector, i) => (
             <motion.span

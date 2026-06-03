@@ -65,13 +65,11 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-white/80 text-lg leading-relaxed mb-9 max-w-[480px]"
             >
-              Your product is better than how it&apos;s being sold. The
+              Your product is better than how it&apos;s being sold — the
               positioning is blurry, the forecast changes every week, and your
               board wants confidence you can&apos;t give them yet. Don Knapp
               spent 20 years fixing exactly this problem from inside companies
-              like yours — as VP Sales, CMO, and CRO — before building this
-              practice. He can solve it faster because he&apos;s been in your
-              seat.
+              like yours, as VP Sales, CMO, and CRO, before building this practice.
             </motion.p>
 
             <motion.ul
@@ -128,9 +126,7 @@ export default function Hero() {
             transition={{ duration: 0.85, delay: 0.35 }}
             className="hidden lg:flex justify-center"
           >
-            <motion.div
-              animate={{ y: [0, -14, 0] }}
-              transition={{ repeat: Infinity, duration: 5.5, ease: "easeInOut" }}
+            <div
               className="relative w-full max-w-sm"
             >
               <div className="bg-white/10 backdrop-blur-xl border border-white/15 rounded-2xl p-7 shadow-2xl">
@@ -163,25 +159,21 @@ export default function Hero() {
               </div>
 
               {/* Don Knapp badge */}
-              <motion.div
-                animate={{ y: [0, -7, 0] }}
-                transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut", delay: 0.8 }}
+              <div
                 className="absolute -top-5 -right-5 bg-gold-500 text-navy-900 rounded-xl px-4 py-2.5 shadow-xl shadow-gold-500/30"
               >
                 <div className="text-sm font-bold font-heading">Don Knapp</div>
                 <div className="text-[10px] font-medium opacity-70">Managing Partner</div>
-              </motion.div>
+              </div>
 
               {/* Revenue badge */}
-              <motion.div
-                animate={{ y: [0, 8, 0] }}
-                transition={{ repeat: Infinity, duration: 4.2, ease: "easeInOut", delay: 0.4 }}
+              <div
                 className="absolute -bottom-5 -left-5 bg-navy-800 border border-white/10 text-white rounded-xl px-4 py-2.5 shadow-xl"
               >
                 <div className="text-sm font-bold font-heading">$2.4B+</div>
                 <div className="text-[11px] text-white/50">Revenue Influenced</div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

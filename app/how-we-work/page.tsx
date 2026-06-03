@@ -143,7 +143,7 @@ export default function HowWeWork() {
                 </span>
               </div>
               <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                Your 5-Part GTM Implementation System
+                The Revenue Architecture
               </h1>
               <p className="text-white/80 text-lg leading-relaxed">
                 Not a set of tactics. A complete, sequenced operating model — built

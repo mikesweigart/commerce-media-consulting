@@ -131,8 +131,8 @@ export default function PainPoints() {
               &ldquo;Every one of these problems is fixable. Most companies just don&apos;t know where to start.&rdquo;
             </p>
             <p className="text-white/65 text-sm leading-relaxed">
-              Don Knapp has fixed all five breaking points with a structured, evidence-backed
-              five-part system — at 47+ companies, from the same operator seat you&apos;re in now.
+              Don Knapp has fixed all five breaking points with the Revenue Architecture — at 47+ companies,
+              from the same operator seat you&apos;re in now.
               Not another set of tactics. A complete GTM operating model your whole team can execute.
             </p>
           </div>

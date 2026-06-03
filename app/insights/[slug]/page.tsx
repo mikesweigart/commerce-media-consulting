@@ -149,7 +149,7 @@ export default async function ArticlePage({ params }: Props) {
                   Apply this framework to your business.
                 </p>
                 <p className="text-white/50 text-xs leading-relaxed mb-4">
-                  Book a strategy session with Don and map your GTM gaps to the 5-part system.
+                  Book a strategy session with Don and map your GTM gaps to the Revenue Architecture.
                 </p>
                 <Link
                   href="/book-a-call"

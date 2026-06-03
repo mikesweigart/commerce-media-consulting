@@ -28,6 +28,65 @@ const whatYouLeave = [
 export default function BookACall() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What happens in the strategy session?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The first 20 minutes are diagnosis — you share your current GTM situation, pains, and goals. The next 20 minutes are analysis — Don shares what he's seeing and maps your gaps to the Revenue Architecture. The last 5 minutes are forward-looking — you discuss whether working together makes sense.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Is there any cost for the strategy session?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "No. The session is free and there's no obligation to engage afterward. The goal is for you to leave with two or three genuinely useful insights regardless of whether you work together.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Who should attend from our team?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The CEO/Founder and/or CRO. The session is most useful when the person who owns the GTM outcome is in the room.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What if we're not ready to engage right now?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "That's fine. Many clients book a strategy session 6–12 months before they're ready to engage. The session is useful on its own.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How do you price engagements?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Engagements are priced as fixed-scope projects, typically over a 90-day period. Most engagements start between $15,000–$25,000 depending on scope. Don works with companies at $2M to $100M+ ARR.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How many clients do you work with at a time?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "A maximum of four active client engagements at any point. If Don is at capacity, he will let you know in the session and discuss a timeline.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       {/* Hero */}
       <section className="bg-navy-900 pt-32 pb-20 relative overflow-hidden">
         <div

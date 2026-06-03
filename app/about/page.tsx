@@ -131,8 +131,8 @@ export default function About() {
             <p>
               When I started working as an advisor, I realized I could solve those problems in
               a fraction of the time it had taken me to figure them out as an operator — because
-              I'd seen the same patterns play out across dozens of companies. The five-part
-              framework I use today is the result of 20 years of pattern recognition, compressed
+              I'd seen the same patterns play out across dozens of companies. The Revenue
+              Architecture I use today is the result of 20 years of pattern recognition, compressed
               into a structured system that I've now implemented with 47+ companies.
             </p>
             <p>

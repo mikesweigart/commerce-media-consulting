@@ -108,7 +108,7 @@ export default function Results() {
               >
                 <Image
                   src="/donimagetalking.png"
-                  alt="Don Knapp walking a client team through the 5-part GTM framework"
+                  alt="Don Knapp walking a client team through the Revenue Architecture framework"
                   fill
                   className="object-cover object-center"
                   priority
@@ -133,7 +133,7 @@ export default function Results() {
               <p className="text-white/80 text-lg leading-relaxed">
                 Every metric below comes from an actual client engagement. No aggregated
                 industry benchmarks — just what happened when a real team implemented the
-                five-part system in their specific business.
+                Revenue Architecture in their specific business.
               </p>
             </MotionDiv>
           </div>
@@ -264,7 +264,7 @@ export default function Results() {
                 Want results like these for your business?
               </h2>
               <p className="text-gray-500 text-lg mb-8">
-                Book a strategy session and see how the 5-part framework applies to your specific GTM situation. No pitch — just an honest diagnosis and a clear plan.
+                Book a strategy session and see how the Revenue Architecture applies to your specific GTM situation.
               </p>
               <Link
                 href="/book-a-call"

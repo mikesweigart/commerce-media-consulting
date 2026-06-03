@@ -199,7 +199,7 @@ export default function ToolsPage() {
             Book a Free Strategy Session
             <ArrowRight size={16} />
           </Link>
-          <p className="text-gray-400 text-xs mt-4">No pitch. Just diagnosis and a clear plan.</p>
+          <p className="text-gray-400 text-xs mt-4">Free · No obligation · Responds within 24 hours</p>
         </div>
       </section>
     </>

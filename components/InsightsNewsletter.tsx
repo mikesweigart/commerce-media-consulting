@@ -7,6 +7,7 @@ export default function InsightsNewsletter() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -58,7 +59,7 @@ export default function InsightsNewsletter() {
                 placeholder="your@company.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-4 py-3.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/35 text-sm focus:outline-none focus:border-gold-400 focus:ring-2 focus:ring-gold-400/20 transition-all"
+                className={`flex-1 px-4 py-3.5 rounded-xl bg-white/10 border text-white placeholder-white/35 text-sm focus:outline-none transition-all ${email && isEmailValid ? "border-emerald-400 ring-2 ring-emerald-400/30" : "border-white/20 focus:border-gold-400 focus:ring-2 focus:ring-gold-400/20"}`}
                 required
               />
               <button
