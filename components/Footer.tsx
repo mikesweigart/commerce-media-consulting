@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Mail, ArrowRight } from "lucide-react";
 
 const footerLinks = {
@@ -43,14 +42,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href="/" className="inline-block mb-5">
-              <Image
-                src="/whiteonbluelogo.png"
-                alt="Commerce Media Consulting Group"
-                width={160}
-                height={44}
-                className="h-10 w-auto object-contain"
-              />
+            <Link href="/" className="inline-block mb-5 group">
+              <div className="flex flex-col leading-none">
+                <span className="font-heading font-black text-[26px] tracking-[-0.03em] leading-none text-white group-hover:opacity-80 transition-opacity">
+                  cmcg
+                </span>
+                <span className="text-[8.5px] font-bold tracking-[0.18em] uppercase leading-none mt-[3px] text-gold-400 group-hover:opacity-80 transition-opacity">
+                  Commerce Media Consulting
+                </span>
+              </div>
             </Link>
             <p className="text-white/75 text-sm leading-relaxed max-w-sm">
               B2B go-to-market advisory for CEOs and CROs who want predictable revenue, sharper positioning, and a system their board can trust.
