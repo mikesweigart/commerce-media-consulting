@@ -17,7 +17,7 @@ const steps = [
     icon: Map,
     title: "Receive Your Revenue Architecture Plan",
     desc: "We synthesize your inputs into a quantified, execution-ready blueprint. You'll see exactly where each part of your GTM system stands and what needs to change, in priority order.",
-    cta: "See a sample plan →",
+    cta: "See what's in the plan →",
   },
   {
     number: "3",

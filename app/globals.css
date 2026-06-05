@@ -55,6 +55,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Offset in-page anchor targets so they clear the 80px fixed header */
+  scroll-padding-top: 6rem;
 }
 
 /* Respect users who prefer reduced motion: neutralize CSS animations,

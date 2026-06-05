@@ -152,7 +152,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <div className="mt-5 pt-5 border-t border-white/10 flex items-center justify-between">
-                  <span className="text-white/25 text-xs">Across recent client engagements</span>
+                  <span className="text-white/40 text-xs">Across recent client engagements</span>
                   <TrendingUp size={14} className="text-green-400" />
                 </div>
               </div>
@@ -184,7 +184,7 @@ export default function Hero() {
         transition={{ delay: 1.4, duration: 0.6 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2"
       >
-        <span className="text-white/20 text-[9px] tracking-[0.35em] uppercase">Scroll</span>
+        <span className="text-white/35 text-[9px] tracking-[0.35em] uppercase">Scroll</span>
         <motion.div
           animate={{ scaleY: [0, 1, 0], y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}

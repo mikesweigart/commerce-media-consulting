@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     "Turn go-to-market chaos into predictable growth. Don Knapp helps B2B CEOs and CROs build the Revenue Architecture — a proven GTM system that delivers measurable results in 90 days.",
   keywords: ["B2B consulting", "go-to-market strategy", "GTM consulting", "revenue growth", "sales playbook"],
   authors: [{ name: "Don Knapp" }],
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -35,6 +36,16 @@ export const metadata: Metadata = {
     title: "Commerce Media Consulting Group | Predictable B2B Growth",
     description: "Build a GTM system your board trusts. Don Knapp's Revenue Architecture delivers measurable results in 90 days.",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Commerce Media Consulting Group | Predictable B2B Growth",
+    description: "Build a GTM system your board trusts. Don Knapp's Revenue Architecture delivers measurable results in 90 days.",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0A1628",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
