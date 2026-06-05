@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Clock, CheckCircle2, TrendingUp } from "lucide-react";
+import { ArrowRight, Clock, CheckCircle2, TrendingUp, Calendar } from "lucide-react";
 
 const expectList = [
   "Bring your current GTM metrics and goals — nothing to prepare",
@@ -88,14 +88,14 @@ export default function BookingCTA() {
                 </div>
               </div>
 
-              {/* Coming soon scheduling notice */}
+              {/* Live scheduling available */}
               <div className="bg-cream-100 rounded-xl p-6 mb-5 text-center border border-cream-200">
-                <div className="w-9 h-9 rounded-full bg-navy-100 flex items-center justify-center mx-auto mb-2.5">
-                  <TrendingUp size={16} className="text-navy-500" />
+                <div className="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-2.5">
+                  <Calendar size={16} className="text-emerald-600" />
                 </div>
-                <p className="text-navy-800 text-sm font-semibold mb-1">Live Scheduling Coming Soon</p>
+                <p className="text-navy-800 text-sm font-semibold mb-1">Don&apos;s calendar is open</p>
                 <p className="text-gray-500 text-xs leading-relaxed">
-                  Don&apos;s calendar will be bookable directly here. In the meantime, reach out by email or visit the booking page.
+                  Pick a 30-minute slot that works for you — confirmed instantly, with no back-and-forth.
                 </p>
               </div>
 
@@ -103,7 +103,7 @@ export default function BookingCTA() {
                 href="/book-a-call"
                 className="group flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold py-4 px-6 rounded-xl transition-all duration-200 text-[15px] shadow-md shadow-gold-500/20 w-full mb-3"
               >
-                Go to Booking Page
+                Pick a Time with Don
                 <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
               </Link>
 

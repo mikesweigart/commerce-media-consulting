@@ -9,7 +9,7 @@ const steps = [
     number: "1",
     icon: Calendar,
     title: "Book Your Strategy Session",
-    desc: "Share your current GTM, the pains you're experiencing, and your two-year growth goals. We'll spend 90 minutes diagnosing your situation and surfacing your highest-leverage opportunities.",
+    desc: "Share your current GTM, the pains you're experiencing, and your two-year growth goals. In 30 focused minutes we'll diagnose your situation and surface your highest-leverage opportunities.",
     cta: null,
   },
   {
