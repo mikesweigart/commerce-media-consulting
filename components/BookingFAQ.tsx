@@ -22,7 +22,7 @@ const faq = [
   },
   {
     q: "How do you price engagements?",
-    a: "Engagements run on a monthly basis, typically over 6 or 12 months, and are contracted in half-day increments — a half day, a full day, or two to three days a week — depending on the scope of the Revenue Architecture we're implementing together. Monthly investment ranges from $4,500 to $25,000. I work with companies generating between $2M and $40M in revenue.",
+    a: "Engagements are usually 6 or 12 months, and are contracted in half-day increments — a half day, a full day, or two to three days a week — depending on the scope of the Revenue Architecture we're implementing together. Monthly investment ranges from $4,500 to $25,000. We work with companies generating between $2M and $40M in revenue.",
   },
   {
     q: "How many clients do you work with at a time?",

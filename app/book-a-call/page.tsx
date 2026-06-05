@@ -73,7 +73,7 @@ export default function BookACall() {
                 name: "How do you price engagements?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Engagements run on a monthly basis, typically over 6 or 12 months, and are contracted in half-day increments — a half day, a full day, or two to three days a week — depending on scope. Monthly investment ranges from $4,500 to $25,000. Don works with companies generating between $2M and $40M in revenue.",
+                  text: "Engagements are usually 6 or 12 months, and are contracted in half-day increments — a half day, a full day, or two to three days a week — depending on scope. Monthly investment ranges from $4,500 to $25,000. We work with companies generating between $2M and $40M in revenue.",
                 },
               },
               {
