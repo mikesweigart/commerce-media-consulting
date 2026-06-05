@@ -46,7 +46,7 @@ export default function LogoBar() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="text-center text-gray-400 text-[11px] mt-5"
         >
-          47+ engagements &nbsp;·&nbsp; $2M to $500M ARR &nbsp;·&nbsp; 20+ years operator experience
+          $2.4B+ revenue influenced &nbsp;·&nbsp; $2M to $40M client revenue &nbsp;·&nbsp; 20+ years operator experience
         </motion.p>
       </div>
     </section>

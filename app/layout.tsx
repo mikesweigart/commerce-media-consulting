@@ -18,6 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://commerce-media-consulting.vercel.app"),
   title: {
     default: "Commerce Media Consulting Group | B2B GTM Advisory",
     template: "%s | Commerce Media Consulting Group",

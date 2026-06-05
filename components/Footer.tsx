@@ -25,7 +25,7 @@ export default function Footer() {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-2">
               Ready to build a GTM system your<br className="hidden md:block" /> board trusts?
             </h2>
-            <p className="text-white/75 text-lg">A 45-minute working session — honest diagnosis, clear path forward.</p>
+            <p className="text-white/75 text-lg">A 30-minute working session — honest diagnosis, clear path forward.</p>
           </div>
           <Link
             href="/book-a-call"

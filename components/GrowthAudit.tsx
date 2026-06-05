@@ -330,7 +330,7 @@ export default function GrowthAudit() {
               Walk Through This Plan with Don
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-6 max-w-md mx-auto">
-              In a 45-minute working session, we'll review your snapshot, prioritize the highest-leverage opportunities, and outline what a 90-day engagement would produce for your business.
+              In a 30-minute working session, we'll review your snapshot, prioritize the highest-leverage opportunities, and outline what a 90-day engagement would produce for your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
@@ -338,7 +338,7 @@ export default function GrowthAudit() {
                 className="group flex items-center justify-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-bold px-8 py-4 rounded-xl transition-all duration-200 text-[15px]"
               >
                 <Calendar size={18} />
-                Book a 45-Minute Session
+                Book a 30-Minute Session
                 <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
               </Link>
               <button

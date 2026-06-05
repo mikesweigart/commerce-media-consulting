@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 
 const credentials = [
   "20+ years in B2B go-to-market leadership",
-  "47+ GTM systems built across SaaS, services, and technology companies",
+  "GTM systems built across SaaS, services, and technology companies",
   "Former VP Sales and CMO roles at venture-backed and PE-backed B2B companies",
   "$2.4B+ in revenue influenced across client engagements",
-  "Worked with companies from $2M to $500M ARR",
+  "Works with companies from $2M to $40M in revenue",
   "Expertise across SaaS, B2B services, healthcare technology, and financial services",
 ];
 
@@ -231,7 +231,7 @@ export default function About() {
             Want to work together?
           </h2>
           <p className="text-white/75 text-lg mb-8">
-            Book a 45-minute strategy session and let&apos;s see if we&apos;re a fit.
+            Book a 30-minute strategy session and let&apos;s see if we&apos;re a fit.
           </p>
           <Link
             href="/book-a-call"

@@ -117,7 +117,7 @@ export default function Image() {
         {/* Stats row */}
         <div style={{ display: "flex", gap: 52, alignItems: "center" }}>
           {[
-            { value: "47+", label: "GTM Systems Built" },
+            { value: "+38%", label: "Customer Retention" },
             { value: "$2.4B+", label: "Revenue Influenced" },
             { value: "90 Days", label: "To First Results" },
           ].map((s, idx) => (

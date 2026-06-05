@@ -50,7 +50,7 @@ export default function BookingCTA() {
               GTM system produces.
             </p>
             <p className="text-white/60 text-base leading-relaxed mb-8">
-              The 45-minute strategy session is where it starts — an honest
+              The 30-minute strategy session is where it starts — an honest
               diagnosis of where your GTM stands and a clear picture of what
               90 days of focused work would produce.
             </p>
@@ -66,7 +66,7 @@ export default function BookingCTA() {
 
             <div className="flex items-center gap-3 text-white/55 text-xs border-t border-white/10 pt-6">
               <Clock size={14} />
-              <span>45-minute session · No obligation · Strategy first, sales never</span>
+              <span>30-minute session · No obligation · Strategy first, sales never</span>
             </div>
           </motion.div>
 

@@ -11,19 +11,19 @@ export const metadata: Metadata = {
 };
 
 const metrics = [
+  { value: "+38%", label: "Increase in Customer Retention", timeframe: "Within 12 months of implementation" },
+  { value: "−50%", label: "Reduction in Internal Meetings", timeframe: "Through a tighter operating rhythm" },
   { value: "+34%", label: "Average Win Rate Increase", timeframe: "Over 12 months" },
   { value: "−41%", label: "Reduction in CAC Payback", timeframe: "Compared to pre-engagement baseline" },
-  { value: "+22%", label: "Average NRR Improvement", timeframe: "12 months post-implementation" },
   { value: "90 Days", label: "To First Measurable Results", timeframe: "From engagement kickoff" },
-  { value: "47+", label: "GTM Systems Built", timeframe: "Across 6 years of practice" },
   { value: "$2.4B+", label: "Revenue Influenced", timeframe: "Cumulative across all client engagements" },
 ];
 
 const caseStudies = [
   {
-    company: "Series B SaaS Platform",
-    segment: "SaaS · 80 employees · $6M ARR",
-    situation: "A B2B analytics platform had strong product-market fit in their founding customer segment but was struggling to grow beyond it. Win rates were 14%, ramp time for new reps was 11 months, and the forecast changed by 40%+ most quarters.",
+    company: "Series B Retail Analytics Company",
+    segment: "Retail Analytics · Series B",
+    situation: "A retail analytics platform had strong product-market fit in their founding customer segment but was struggling to grow beyond it. Win rates were 14%, ramp time for new reps was 11 months, and the forecast changed by 40%+ most quarters.",
     plan: "Started with a positioning sprint and ICP validation exercise, then rebuilt the commercial playbook based on win/loss interviews. Implemented a pipeline coverage model and weekly operating rhythm in month 3.",
     results: [
       { metric: "+28%", label: "Win rate improvement (14% → 36%)" },
@@ -34,51 +34,51 @@ const caseStudies = [
     timeframe: "12-month engagement",
   },
   {
-    company: "B2B Professional Services Firm",
-    segment: "Services · 45 employees · $4M ARR",
-    situation: "A revenue operations consultancy was growing through referrals but couldn't build a repeatable pipeline engine. They had no structured outbound motion, no defined ICP, and content that didn't generate meaningful inbound activity.",
-    plan: "Built an ICP scoring model from a customer analysis, developed an outbound sequencing framework, and created a middle-funnel content program specifically designed for revenue operations buyers. Implemented a weekly experiment rhythm.",
+    company: "Behavioral Intelligence Firm",
+    segment: "Behavioral Intelligence · $4M Revenue",
+    situation: "A behavioral intelligence firm was growing through referrals but couldn't build a repeatable pipeline engine. They had no structured outbound motion, no defined ICP, and content that didn't generate meaningful inbound activity.",
+    plan: "Built an ICP scoring model from a customer analysis, developed an outbound sequencing framework, and created a middle-funnel content program specifically designed for their core buyers. Implemented a weekly experiment rhythm.",
     results: [
       { metric: "+73%", label: "Qualified meetings from outbound (quarter over quarter)" },
-      { metric: "+$3.1M", label: "ARR in 18 months (from $4M to $7.1M)" },
+      { metric: "+$3.1M", label: "Revenue added (from $4M to $7.1M)" },
       { metric: "−35%", label: "CAC payback period" },
       { metric: "4.2x", label: "Increase in content-influenced pipeline" },
     ],
-    timeframe: "18-month engagement",
+    timeframe: "6-month engagement",
   },
   {
-    company: "Healthcare Technology Company",
-    segment: "SaaS · 120 employees · $18M ARR",
-    situation: "A healthcare IT company had inconsistent messaging across regions and a sales team where top performers were outperforming mid-tier reps by 3x. NRR was declining as the company expanded into new segments without a clear ICP.",
-    plan: "Rebuilt positioning for three distinct ICP segments, created persona-specific playbooks for each segment, and implemented a tiered ICP scoring model to ensure reps focused on high-fit accounts. Built a structured customer success playbook to stabilize NRR.",
+    company: "Consumer Insights & Marketing Measurement Company",
+    segment: "Consumer Insights & Marketing Measurement",
+    situation: "A consumer insights and marketing measurement company had inconsistent messaging across segments and a sales team where top performers were outperforming mid-tier reps by 3x. Retention was declining as the company expanded into new segments without a clear ICP.",
+    plan: "Rebuilt positioning for three distinct ICP segments, created persona-specific playbooks for each, and implemented a tiered ICP scoring model to ensure reps focused on high-fit accounts. Built a structured customer success playbook to stabilize retention.",
     results: [
-      { metric: "+19%", label: "Average win rate improvement across all regions" },
-      { metric: "+14%", label: "NRR improvement (from 91% to 105%)" },
+      { metric: "+19%", label: "Average win rate improvement across all segments" },
+      { metric: "+14%", label: "Customer retention improvement (from 91% to 105%)" },
       { metric: "−38%", label: "Reduction in low-fit deals in pipeline" },
-      { metric: "+$6.4M", label: "Net new ARR in 12 months" },
+      { metric: "+$6.4M", label: "Net new revenue" },
     ],
-    timeframe: "12-month engagement",
+    timeframe: "6-month engagement",
   },
 ];
 
 const testimonials = [
   {
-    quote: "Don's five-part framework gave us our first truly repeatable quarter. Win rates are up 28% and my forecast finally matches reality at the end of the quarter. I stopped dreading board meetings.",
-    name: "Sarah Chen",
-    title: "CRO, Series B SaaS Platform",
-    initials: "SC",
+    quote: "Don's Revenue Architecture gave us our first truly repeatable quarter. Win rates are up 28% and my forecast finally matches reality at the end of the quarter. I stopped dreading board meetings.",
+    name: "Chief Revenue Officer",
+    title: "Series B Retail Analytics Company",
+    initials: "RA",
   },
   {
-    quote: "I hired Don when we were at $4M ARR and couldn't figure out why growth had stalled. Six months later we're at $7M and have a real commercial engine. The ROI is not close.",
-    name: "James Park",
-    title: "CEO, B2B Professional Services",
-    initials: "JP",
+    quote: "I hired Don when we were at $4M and couldn't figure out why growth had stalled. Six months later we have a real commercial engine. The ROI is not close.",
+    name: "Chief Executive Officer",
+    title: "Behavioral Intelligence Firm",
+    initials: "BI",
   },
   {
     quote: "The positioning work alone was worth the entire engagement. We went from 'we do X for companies' to a crystal-clear narrative my entire team delivers consistently. Deals close faster now because buyers understand us faster.",
-    name: "Maria Torres",
-    title: "VP Revenue, Healthcare Technology",
-    initials: "MT",
+    name: "Founder",
+    title: "Consumer Insights & Marketing Measurement Company",
+    initials: "CI",
   },
 ];
 

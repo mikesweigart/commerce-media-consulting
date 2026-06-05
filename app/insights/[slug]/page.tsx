@@ -118,7 +118,7 @@ export default async function ArticlePage({ params }: Props) {
                   </div>
                 </div>
                 <p className="text-gray-600 text-xs leading-relaxed mb-4">
-                  B2B go-to-market advisor with 20+ years of experience building GTM systems for CEOs and CROs at companies from $2M to $500M ARR.
+                  B2B go-to-market advisor with 20+ years of experience building GTM systems for CEOs and CROs at companies from $2M to $40M in revenue.
                 </p>
                 <Link
                   href="/about"

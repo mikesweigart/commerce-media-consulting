@@ -3,12 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { MotionDiv, MotionLi } from "@/components/ui/Motion";
 import BookingFAQ from "@/components/BookingFAQ";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
 import { CheckCircle2, Clock, Calendar, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Book a Strategy Session",
   description:
-    "Book a 45-minute growth strategy session with Don Knapp. No pitch — just an honest diagnosis of your GTM situation and a clear path forward.",
+    "Book a 30-minute growth strategy session with Don Knapp. No pitch — just an honest diagnosis of your GTM situation and a clear path forward.",
 };
 
 const whatToBring = [
@@ -40,7 +41,7 @@ export default function BookACall() {
                 name: "What happens in the strategy session?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "The first 20 minutes are diagnosis — you share your current GTM situation, pains, and goals. The next 20 minutes are analysis — Don shares what he's seeing and maps your gaps to the Revenue Architecture. The last 5 minutes are forward-looking — you discuss whether working together makes sense.",
+                  text: "The first 15 minutes are diagnosis — you share your current GTM situation, pains, and goals. The next 10 minutes are analysis — Don shares what he's seeing and maps your gaps to the Revenue Architecture. The last 5 minutes are forward-looking — you discuss whether working together makes sense.",
                 },
               },
               {
@@ -72,7 +73,7 @@ export default function BookACall() {
                 name: "How do you price engagements?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Engagements are priced as fixed-scope projects, typically over a 90-day period. Most engagements start between $15,000–$25,000 depending on scope. Don works with companies at $2M to $100M+ ARR.",
+                  text: "Engagements run on a monthly basis, typically over 6 or 12 months, and are contracted in half-day increments — a half day, a full day, or two to three days a week — depending on scope. Monthly investment ranges from $4,500 to $25,000. Don works with companies generating between $2M and $40M in revenue.",
                 },
               },
               {
@@ -113,7 +114,7 @@ export default function BookACall() {
                 Let&apos;s diagnose your GTM together.
               </h1>
               <p className="text-white/80 text-lg leading-relaxed">
-                In 45 minutes, we&apos;ll surface exactly where your GTM is leaking revenue
+                In 30 minutes, we&apos;ll surface exactly where your GTM is leaking revenue
                 and what to fix first — across positioning, pipeline, playbook, and marketing
                 alignment. No pitch, no pressure. Just an honest diagnosis and a clear plan.
               </p>
@@ -201,7 +202,7 @@ export default function BookACall() {
               <div className="flex flex-wrap items-center gap-5 text-gray-400 text-xs border-t border-gray-100 pt-6">
                 <span className="flex items-center gap-1.5">
                   <Clock size={13} />
-                  45 minutes
+                  30 minutes
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Calendar size={13} />
@@ -239,30 +240,24 @@ export default function BookACall() {
                 </div>
 
                 <div className="p-8">
-                  {/* Live scheduling coming soon */}
-                  <div className="bg-cream-50 border border-cream-200 rounded-xl p-7 mb-6 text-center">
-                    <div className="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center mx-auto mb-3">
-                      <Calendar size={18} className="text-navy-500" />
-                    </div>
-                    <p className="font-heading font-semibold text-navy-800 text-sm mb-1">
-                      Live Scheduling Coming Very Soon
+                  {/* Live scheduling */}
+                  <CalendlyEmbed />
+
+                  <div className="mt-6 pt-6 border-t border-gray-100 text-center">
+                    <p className="text-gray-500 text-xs mb-3">
+                      Prefer email? Reach Don directly — he responds within 24 hours.
                     </p>
-                    <p className="text-gray-500 text-xs leading-relaxed">
-                      Don&apos;s calendar will be bookable directly here. In the meantime, lock in your session by emailing Don below — he responds within 24 hours.
+                    <a
+                      href="mailto:don.knapp.cmcg@gmail.com?subject=Growth%20Strategy%20Session%20Request"
+                      className="group inline-flex items-center justify-center gap-2 border border-gray-200 hover:border-gold-300 hover:bg-cream-50 text-navy-800 font-semibold py-3 px-6 rounded-xl transition-all duration-200 text-sm"
+                    >
+                      Email Don Instead
+                      <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
+                    </a>
+                    <p className="text-gray-400 text-xs mt-4">
+                      Free · No obligation
                     </p>
                   </div>
-
-                  <a
-                    href="mailto:don.knapp.cmcg@gmail.com?subject=Growth%20Strategy%20Session%20Request"
-                    className="group flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold py-4 px-6 rounded-xl transition-all duration-200 text-[15px] w-full"
-                  >
-                    Email Don to Book Your Session
-                    <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
-                  </a>
-
-                  <p className="text-center text-gray-400 text-xs mt-4">
-                    Responds within 24 hours on business days · Free · No obligation
-                  </p>
                 </div>
               </div>
             </MotionDiv>

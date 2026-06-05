@@ -5,8 +5,8 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 const stats = [
-  { prefix: "", end: 47, suffix: "+", label: "GTM Systems Built", decimals: 0 },
-  { prefix: "$", end: 2.4, suffix: "B+", label: "Revenue Influenced", decimals: 1 },
+  { prefix: "+", end: 38, suffix: "%", label: "Increase in Customer Retention", decimals: 0 },
+  { prefix: "−", end: 50, suffix: "%", label: "Fewer Internal Meetings", decimals: 0 },
   { prefix: "+", end: 34, suffix: "%", label: "Avg Win Rate Increase", decimals: 0 },
   { prefix: "", end: 90, suffix: " Days", label: "To First Measurable Results", decimals: 0 },
 ];
@@ -14,24 +14,24 @@ const stats = [
 const testimonials = [
   {
     quote:
-      "Don's five-part framework gave us our first truly repeatable quarter. Win rates are up 28% and my forecast finally matches reality at the end of the quarter — not just the beginning.",
-    name: "Sarah Chen",
-    title: "CRO, Series B SaaS",
-    initials: "SC",
+      "Don's Revenue Architecture gave us our first truly repeatable quarter. Win rates are up 28% and my forecast finally matches reality at the end of the quarter — not just the beginning.",
+    name: "Chief Revenue Officer",
+    title: "Series B Retail Analytics Company",
+    initials: "RA",
   },
   {
     quote:
-      "I hired Don when we were at $4M ARR and couldn't figure out why growth had stalled. Six months later we're at $7M and have a real commercial engine — not a hope-and-pray pipeline.",
-    name: "James Park",
-    title: "CEO, B2B Professional Services",
-    initials: "JP",
+      "I hired Don when we were at $4M and couldn't figure out why growth had stalled. Six months later we have a real commercial engine — not a hope-and-pray pipeline.",
+    name: "Chief Executive Officer",
+    title: "Behavioral Intelligence Firm",
+    initials: "BI",
   },
   {
     quote:
       "The positioning work alone was worth the entire engagement. We went from 'we do X for companies' to a crystal-clear narrative my entire team can deliver confidently in any conversation.",
-    name: "Maria Torres",
-    title: "VP Revenue, Enterprise SaaS",
-    initials: "MT",
+    name: "Founder",
+    title: "Consumer Insights & Marketing Measurement Company",
+    initials: "CI",
   },
 ];
 

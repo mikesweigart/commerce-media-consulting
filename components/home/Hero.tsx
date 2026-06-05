@@ -6,9 +6,9 @@ import { ArrowRight, TrendingUp } from "lucide-react";
 
 const metrics = [
   { value: "+34%", label: "Win Rate Increase" },
+  { value: "+38%", label: "Customer Retention" },
+  { value: "−50%", label: "Fewer Meetings" },
   { value: "90 Days", label: "To First Results" },
-  { value: "+22%", label: "NRR Growth" },
-  { value: "−41%", label: "CAC Payback" },
 ];
 
 const benefits = [
@@ -65,11 +65,10 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-white/80 text-lg leading-relaxed mb-9 max-w-[480px]"
             >
-              Your product is better than how it&apos;s being sold — the
-              positioning is blurry, the forecast changes every week, and your
-              board wants confidence you can&apos;t give them yet. Don Knapp
-              spent 20 years fixing exactly this problem from inside companies
-              like yours, as VP Sales, CMO, and CRO, before building this practice.
+              Your product is better than how it&apos;s being sold — the positioning
+              is blurry, the forecast shifts every week, and your board wants confidence
+              you can&apos;t give them yet. Don Knapp spent 20 years fixing exactly this
+              as a VP Sales, CMO, and CRO before building this practice.
             </motion.p>
 
             <motion.ul
@@ -110,7 +109,7 @@ export default function Hero() {
               </div>
               {/* Mobile-only trust bar */}
               <div className="flex items-center gap-2 lg:hidden flex-wrap">
-                <span className="text-white/45 text-xs">47+ Systems Built</span>
+                <span className="text-white/45 text-xs">+38% Retention</span>
                 <span className="text-white/20 text-xs">·</span>
                 <span className="text-white/45 text-xs">$2.4B+ Influenced</span>
                 <span className="text-white/20 text-xs">·</span>

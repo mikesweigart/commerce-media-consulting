@@ -51,7 +51,7 @@ export default function InsightsNewsletter() {
             </h2>
             <p className="text-white/65 text-sm leading-relaxed mb-8">
               20 years of building commercial systems, compressed into one actionable insight per week.
-              No filler, no generic advice — just what works for B2B companies at $2M–$100M ARR.
+              No filler, no generic advice — just what works for B2B companies at $2M–$40M in revenue.
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input

@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 const faq = [
   {
     q: "What happens in the strategy session?",
-    a: "The first 20 minutes are diagnosis — you share your current GTM situation, pains, and goals. The next 20 minutes are analysis — I share what I'm seeing and map your gaps to the Revenue Architecture framework. The last 5 minutes are forward-looking — we discuss whether working together makes sense and what that would look like. It's a working session, not a sales presentation.",
+    a: "The first 15 minutes are diagnosis — you share your current GTM situation, pains, and goals. The next 10 minutes are analysis — I share what I'm seeing and map your gaps to the Revenue Architecture framework. The last 5 minutes are forward-looking — we discuss whether working together makes sense and what that would look like. It's a working session, not a sales presentation.",
   },
   {
     q: "Is there any cost for the strategy session?",
@@ -22,7 +22,7 @@ const faq = [
   },
   {
     q: "How do you price engagements?",
-    a: "Engagements are priced as fixed-scope projects, typically over a 90-day period. Most engagements start between $15,000–$25,000 depending on the scope of the Revenue Architecture being implemented — which we'll define together if the session confirms a strong fit. I work with companies at $2M to $100M+ ARR.",
+    a: "Engagements run on a monthly basis, typically over 6 or 12 months, and are contracted in half-day increments — a half day, a full day, or two to three days a week — depending on the scope of the Revenue Architecture we're implementing together. Monthly investment ranges from $4,500 to $25,000. I work with companies generating between $2M and $40M in revenue.",
   },
   {
     q: "How many clients do you work with at a time?",
