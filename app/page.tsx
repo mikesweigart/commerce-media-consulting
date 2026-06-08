@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "@/components/home/Hero";
 import LogoBar from "@/components/home/LogoBar";
 import PainPoints from "@/components/home/PainPoints";
@@ -7,13 +8,22 @@ import HowItWorks from "@/components/home/HowItWorks";
 import Deliverables from "@/components/home/Deliverables";
 import BookingCTA from "@/components/home/BookingCTA";
 
+export const metadata: Metadata = {
+  title: {
+    absolute: "B2B Go-to-Market Consulting for Predictable Revenue | CMCG",
+  },
+  description:
+    "Don Knapp helps B2B CEOs and CROs ($2M–$40M revenue) turn go-to-market chaos into predictable growth with The Revenue Architecture. Book a free 30-minute strategy session.",
+  alternates: { canonical: "/" },
+};
+
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "Commerce Media Consulting Group",
   description:
     "B2B go-to-market advisory that helps CEOs and CROs build the Revenue Architecture — a complete GTM operating model that turns chaos into predictable growth.",
-  url: "https://commerce-media-consulting.vercel.app",
+  url: "https://www.cmcgco.com",
   email: "don.knapp.cmcg@gmail.com",
   founder: {
     "@type": "Person",

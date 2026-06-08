@@ -5,9 +5,10 @@ import Image from "next/image";
 import { ArrowRight, CheckCircle2, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Don Knapp",
+  title: "About Don Knapp — Managing Partner",
   description:
-    "Don Knapp is the Managing Partner of Commerce Media Consulting Group, a B2B GTM advisory practice helping CEOs and CROs build predictable revenue systems.",
+    "Don Knapp is the Managing Partner of Commerce Media Consulting Group, a B2B GTM advisory practice helping CEOs and CROs build predictable revenue systems. 20+ years as a VP Sales, CMO, and CRO.",
+  alternates: { canonical: "/about" },
 };
 
 const credentials = [
@@ -38,9 +39,38 @@ const philosophy = [
   },
 ];
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Don Knapp",
+  jobTitle: "Managing Partner",
+  url: "https://www.cmcgco.com/about",
+  email: "don.knapp.cmcg@gmail.com",
+  sameAs: ["https://www.linkedin.com/in/don-knapp-2037504/"],
+  worksFor: {
+    "@type": "Organization",
+    name: "Commerce Media Consulting Group",
+    url: "https://www.cmcgco.com",
+  },
+  knowsAbout: [
+    "B2B go-to-market strategy",
+    "Strategic positioning",
+    "Ideal customer profile",
+    "Sales playbooks",
+    "Pipeline management and forecasting",
+    "Revenue operations",
+  ],
+  description:
+    "Don Knapp is the Managing Partner of Commerce Media Consulting Group. He spent 20+ years in B2B go-to-market leadership as a VP of Sales, CMO, and CRO before building this advisory practice.",
+};
+
 export default function About() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       {/* Hero */}
       <section className="bg-navy-900 pt-32 pb-20 relative overflow-hidden">
         <div

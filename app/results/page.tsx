@@ -5,9 +5,10 @@ import { MotionDiv } from "@/components/ui/Motion";
 import { ArrowRight, TrendingUp, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Results",
+  title: "Results & Client Case Studies",
   description:
-    "See the GTM outcomes Commerce Media Consulting Group has delivered for B2B clients — improved win rates, faster pipeline, and board-ready forecasts.",
+    "See the GTM outcomes Commerce Media Consulting Group has delivered for B2B clients — improved win rates, higher customer retention, faster pipeline, and board-ready forecasts.",
+  alternates: { canonical: "/results" },
 };
 
 const metrics = [

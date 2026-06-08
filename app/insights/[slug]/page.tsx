@@ -16,6 +16,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: article.title,
     description: article.excerpt,
+    keywords: article.tags,
+    alternates: { canonical: `/insights/${slug}` },
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description: article.excerpt,
+      url: `/insights/${slug}`,
+      publishedTime: article.publishedAt,
+      authors: ["Don Knapp"],
+      tags: article.tags,
+    },
   };
 }
 
@@ -43,8 +54,36 @@ export default async function ArticlePage({ params }: Props) {
 
   const related = getRelatedArticles(slug, 3);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: article.title,
+    description: article.excerpt,
+    datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
+    articleSection: article.category,
+    keywords: article.tags.join(", "),
+    wordCount: article.content.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length,
+    author: {
+      "@type": "Person",
+      name: "Don Knapp",
+      jobTitle: "Managing Partner",
+      url: "https://www.cmcgco.com/about",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Commerce Media Consulting Group",
+      url: "https://www.cmcgco.com",
+    },
+    mainEntityOfPage: `https://www.cmcgco.com/insights/${slug}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Header */}
       <section className="bg-navy-900 pt-32 pb-16 relative overflow-hidden">
         <div

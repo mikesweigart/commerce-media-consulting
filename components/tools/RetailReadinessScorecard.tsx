@@ -79,7 +79,7 @@ function buildMailto(brandName: string, contactName: string, email: string, tota
     ...recs.map((r, i) => `${i + 1}. ${r}`),
     ``,
     `Review your results with Don:`,
-    `https://commerce-media-consulting.vercel.app/book-a-call`,
+    `https://www.cmcgco.com/book-a-call`,
   ].join("\n");
   return `mailto:${email}?subject=${encodeURIComponent(`Your Retail Readiness Results — Commerce Media Consulting`)}&body=${encodeURIComponent(body)}`;
 }

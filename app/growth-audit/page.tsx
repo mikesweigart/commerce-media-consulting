@@ -3,9 +3,10 @@ import GrowthAudit from "@/components/GrowthAudit";
 import { MotionDiv } from "@/components/ui/Motion";
 
 export const metadata: Metadata = {
-  title: "Growth Audit",
+  title: "Free 3-Minute B2B Growth Audit",
   description:
-    "Take the 3-minute B2B growth audit and get a personalized snapshot of where your GTM system stands across the 5 key parts — with specific recommendations for your situation.",
+    "Take the free 3-minute B2B growth audit and get a personalized snapshot of where your GTM system stands across the 5 key parts of the Revenue Architecture — with specific recommendations for your situation.",
+  alternates: { canonical: "/growth-audit" },
 };
 
 export default function GrowthAuditPage() {

@@ -7,9 +7,10 @@ import { ArrowRight, Clock, Tag } from "lucide-react";
 import { articles } from "@/data/insights";
 
 export const metadata: Metadata = {
-  title: "Insights",
+  title: "Insights — B2B Go-to-Market Strategy",
   description:
     "B2B go-to-market insights from Don Knapp — on positioning, ICP, sales playbooks, pipeline management, pricing, and building a GTM system that produces predictable revenue.",
+  alternates: { canonical: "/insights" },
 };
 
 const categoryColors: Record<string, string> = {

@@ -290,7 +290,7 @@ export default function ChannelPrioritizationTool() {
       ...top3.map((ch, i) => `${i+1}. ${ch.name} (${ch.score}% fit)\n   Next 90 days: ${ch.action90}`),
       "",
       "Review results with Don:",
-      "https://commerce-media-consulting.vercel.app/book-a-call",
+      "https://www.cmcgco.com/book-a-call",
     ].join("\n");
     return `mailto:${email}?subject=${encodeURIComponent("Your Channel Prioritization Results — Commerce Media Consulting")}&body=${encodeURIComponent(body)}`;
   };

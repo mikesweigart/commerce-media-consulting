@@ -9,7 +9,8 @@ import { CheckCircle2, Clock, Calendar, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Book a Strategy Session",
   description:
-    "Book a 30-minute growth strategy session with Don Knapp. No pitch — just an honest diagnosis of your GTM situation and a clear path forward.",
+    "Book a free 30-minute growth strategy session with Don Knapp. No pitch — just an honest diagnosis of your GTM situation and a clear path forward.",
+  alternates: { canonical: "/book-a-call" },
 };
 
 const whatToBring = [

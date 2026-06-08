@@ -6,6 +6,7 @@ import { ArrowRight, TrendingUp, GitBranch, Search, CheckCircle2, Clock } from "
 export const metadata: Metadata = {
   title: "Free B2B & CPG Strategy Tools | Commerce Media Consulting Group",
   description: "Free interactive diagnostic tools for B2B and CPG leaders: assess your GTM readiness, prioritize channels, and surface your highest-leverage growth opportunities — with instant results.",
+  alternates: { canonical: "/tools" },
 };
 
 const tools = [
