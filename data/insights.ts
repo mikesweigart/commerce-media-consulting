@@ -11,6 +11,311 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "executive-guide-to-icp",
+    title: "The Executive's Guide to ICP: How CEOs, CROs, and CMOs Each Define \"Ideal Customer\"",
+    excerpt:
+      "The CEO, CRO, and CMO almost always hold three different definitions of the ideal customer — and that quiet disagreement is the root of most GTM chaos. Here's a five-dimension model and a 30-day process to get your leadership team writing down the same ICP on one page.",
+    category: "Go-to-Market Strategy",
+    readTime: 9,
+    publishedAt: "2026-05-28",
+    tags: ["ICP", "Leadership", "Strategy", "Win Rate"],
+    content: `
+<p>Get your CEO, CRO, and CMO in a room and ask each of them to describe your ideal customer. Don't let them confer. Just write down what they say.</p>
+
+<p>I've run this exercise dozens of times, and it almost never produces one answer. The CEO describes the enterprise logo that makes the investor deck look good. The CRO describes the mid-market deal that actually closes in under 90 days. The CMO describes the audience they can reach efficiently on the channels they own. Three smart people, three different customers — and a go-to-market engine quietly pulling in three directions.</p>
+
+<p>That disagreement is expensive. It shows up as reps chasing logos that never close, campaigns that generate leads but not pipeline, and a forecast nobody trusts. After 20 years in the VP Sales, CMO, and CRO seats myself, I've come to believe that misaligned ICP is the single most common root cause of GTM chaos. Not bad reps. Not a weak product. A leadership team that never agreed on who they're actually for.</p>
+
+<h2>Why "mid-market SaaS, 200–2,000 employees" isn't an ICP</h2>
+
+<p>Most ICP documents are really just market segments wearing a costume. "North American SaaS companies, Series B to C, 200 to 2,000 employees." That's a TAM slide. It tells you who you could sell to. It tells you nothing about who you win.</p>
+
+<p>Two companies can sit inside that exact band and be nothing alike. One has a burning problem, a budget already approved, and an executive whose bonus depends on solving it. The other has never heard of your category and is one bad quarter away from a hiring freeze. Firmographics can't tell them apart. So your team treats them the same — and your win rate stays flat no matter how many leads you pour in.</p>
+
+<h2>The five dimensions of an ICP that actually predicts wins</h2>
+
+<p>A working ICP narrows the field at five levels. Each one filters out accounts that look good on paper but don't convert.</p>
+
+<p><strong>1. Firmographics.</strong> The baseline — industry, size, geography, funding stage. Necessary, but this is where most companies stop. Treat it as the front door, not the whole house.</p>
+
+<p><strong>2. Trigger events.</strong> What changed in their world to make this a priority now? A new compliance requirement, a fresh funding round, a competitor win, an executive hire. The companies that buy are usually the ones where something just moved.</p>
+
+<p><strong>3. Organizational readiness.</strong> Do they have the tech, the process maturity, and the appetite for change to actually succeed with you? A great-fit company that can't absorb the change will stall in implementation and churn — and tell their network you didn't deliver.</p>
+
+<p><strong>4. The buying committee and champion.</strong> Who tends to lead the initiative when you win? What's their role, their seniority, their political capital? Your best deals usually share a champion profile. Most teams have never written it down.</p>
+
+<p><strong>5. Unit economics and strategic fit.</strong> What does an ideal account look like through the P&L — contract value, gross margin, expansion potential, willingness to refer? Your best customers are rarely your biggest. They're the ones who renew, grow, and bring you the next three.</p>
+
+<p>A data analytics company I worked with had defined their ICP as "technology companies, Series B+, 100–500 employees." Their win rate was 14%. We added three behavioral filters — a recent VP of Revenue Operations hire, a CRM implemented in the last 18 months, and active expansion into a second region. Same product, same price, same reps. The win rate in that tightened segment jumped to 31% the following quarter. Nothing changed except who they pointed at.</p>
+
+<h2>Three executives, three lenses — and where they collide</h2>
+
+<p>Part of the reason ICP drifts is that each leader is optimizing for something real, just different.</p>
+
+<p>The <strong>CEO</strong> sees ICP as strategy and story — the TAM that justifies the raise and the long-term bet. The risk is keeping the definition broad to keep the market slide impressive.</p>
+
+<p>The <strong>CRO</strong> sees ICP as pipeline quality — win rate, cycle time, forecast accuracy. The risk is over-indexing on what's closing this quarter and ignoring the strategic segment you'll need in two years.</p>
+
+<p>The <strong>CMO</strong> sees ICP as reach and resonance — who they can target and move with a message. The risk is drifting toward the audience that's easy to reach instead of the one you have a real right to win.</p>
+
+<p>None of them is wrong. But if nobody reconciles the three, the company markets to SMB, sells to mid-market, and tells investors it's going enterprise. That's not a strategy. That's three strategies fighting over one budget.</p>
+
+<h2>A 30-day process to get one ICP on one page</h2>
+
+<p><strong>Week 1 — Look at the evidence.</strong> Pull your last 50-plus closed deals, won and lost. Score them against all five dimensions, not just firmographics. Patterns surface fast. If you want a head start, our <a href="/tools/icp-fit-analyzer">ICP &amp; Deal Fit Analyzer</a> walks you through this with your own deal data in a few minutes.</p>
+
+<p><strong>Week 2 — Put the three lenses on the table.</strong> Get the CEO, CRO, and CMO in a 90-minute working session. Each presents their working definition. Then you lay the win/loss data over the top and let the evidence break the ties. Draft one ICP statement across all five dimensions.</p>
+
+<p><strong>Week 3 — Make it operational.</strong> Turn the statement into an A/B/C scorecard. Wire it into lead routing, campaign targeting, and pipeline reviews. An ICP that lives in a slide changes nothing. An ICP that decides which leads get worked changes everything.</p>
+
+<p><strong>Week 4 — Test it.</strong> Run two or three campaigns and a sales play aimed only at your "A" accounts. Watch the win rate, cycle time, and deal size against your B and C accounts. The gap is your proof — and your mandate.</p>
+
+<h2>What it looks like when it's working</h2>
+
+<p>You'll know the ICP is real when win rates climb in your top tier, "no decision" losses fall, and reps start disqualifying low-fit accounts without being told to. The clearest signal of all: your board understands why you're saying no to certain logos — and nods.</p>
+
+<p>Clarity on who you're for is the foundation the rest of the go-to-market system is built on. It feeds your positioning, your playbook, your campaigns, and your forecast. If your leadership team can't write down the same ICP on one page today, that's not a small gap — and it's the first thing I'd fix. <a href="/book-a-call">Book a strategy session</a> and we'll work through your win/loss data together.</p>
+`,
+  },
+  {
+    slug: "turn-tribal-knowledge-into-a-sales-playbook",
+    title: "Turning Tribal Knowledge Into a Sales Playbook: A 4-Week Plan",
+    excerpt:
+      "Your best reps have a system. They just can't describe it — so it never transfers, ramp drags on for a year, and every deal depends on a hero. Here's a four-week plan to extract what your top performers do and turn it into a playbook the whole team actually uses.",
+    category: "Commercial System",
+    readTime: 8,
+    publishedAt: "2026-05-14",
+    tags: ["Sales Playbook", "Enablement", "Commercial System", "Ramp"],
+    content: `
+<p>Every sales team has its heroes — the two or three reps who consistently beat quota while everyone else hovers around it. Ask them how they do it and you'll get a shrug and a sentence: "I just build good relationships." That answer is worth nothing to the rest of your team, and it's quietly capping your growth.</p>
+
+<p>The problem isn't that your average reps are bad. It's that your best reps' system lives entirely in their heads. When the playbook is tribal knowledge, new hires take nine to twelve months to ramp, mid-tier reps never break through, and your forecast rides on whether the heroes are having a good quarter. "Just hire more good reps" feels like the answer. It isn't — it's the most expensive way to avoid the real work.</p>
+
+<p>The real work is extraction: getting what your top performers know out of their heads and into a system the whole team can run. Here's the four-week plan I use to do exactly that.</p>
+
+<h2>Week 1 — Interview the people who already win</h2>
+
+<p>Pick your two or three best reps. Sit each of them down for a structured 60-minute interview and record it. You're not looking for their philosophy — you're hunting for the specific, repeatable moves.</p>
+
+<p>Ask how they prospect, how they open a first call, what they ask in discovery that others don't, how they handle the moment a deal stalls, and what they do differently in the last two weeks of a deal. Push past the generic answers. "I qualify hard" is useless. "I ask who else has to sign off before this is real, on the first call" is a play you can teach.</p>
+
+<h2>Week 2 — Map the process and find the moments that matter</h2>
+
+<p>Lay out your actual sales process, stage by stage: first meeting, discovery, evaluation, business case, commit, close. Then mark the handful of moments where deals are actually won or lost. For most B2B teams, that's discovery, the proposal review, and the negotiation.</p>
+
+<p>At each of those moments, pull the specifics out of your Week 1 interviews — the exact questions, the talk tracks, the objection responses, the way your best reps frame value. These moments are where your playbook earns its keep. Everything else is scaffolding.</p>
+
+<h2>Week 3 — Draft version 0.8 (and keep it short)</h2>
+
+<p>Now write it down. A playbook your team will actually use has five sections:</p>
+
+<ul>
+<li><strong>Who we sell to</strong> — your ICP and personas, in plain language.</li>
+<li><strong>Our sales process</strong> — each stage, its exit criteria, and what "good" looks like.</li>
+<li><strong>Meeting guides</strong> — discovery, demo, and proposal, with real questions and talk tracks.</li>
+<li><strong>The objection library</strong> — your 10 to 15 most common objections and how your best reps actually answer them.</li>
+<li><strong>Templates</strong> — the emails and follow-ups that move deals.</li>
+</ul>
+
+<p>Call it version 0.8 on purpose. It's a draft meant to be tested, not a monument. And resist the urge to make it comprehensive — a 60-page playbook is a 60-page paperweight. Design it to be searched, not read cover to cover.</p>
+
+<h2>Week 4 — Test it, then roll it out</h2>
+
+<p>Pilot the draft with a small group: one or two of your top reps and a few in the middle of the pack. Listen to their calls. Watch where the guidance is unclear, which sections they actually reach for, and which they ignore. Then update it based on what real usage tells you.</p>
+
+<p>When it's solid, roll it out properly — a 60-to-90-minute working session with live role-plays, not a PDF dropped in a Slack channel. People adopt what they practice, not what they're emailed.</p>
+
+<h2>The three ways playbooks die</h2>
+
+<p>I've seen a lot of playbooks fail, almost always for one of three reasons.</p>
+
+<p>They're <strong>too theoretical</strong> — full of frameworks and empty of the actual words to say. Fix it with real call snippets, specific questions, and exact templates.</p>
+
+<p>They're <strong>too long</strong> — so nobody reads them. Fix it by designing for searchability: a clear table of contents, checklists, short sections.</p>
+
+<p>They have <strong>no owner</strong> — so they go stale within a quarter. Fix it by assigning one person — RevOps, enablement, or a lead AE — to own updates.</p>
+
+<h2>Keep it alive</h2>
+
+<p>A playbook isn't a project you finish; it's a system you maintain. Track win rate by stage, cycle length, and ramp time so you can see whether it's working. Once a quarter, sit down and ask what's changed, what's working, and what to add or cut. The teams that do this turn a one-time document into a compounding advantage.</p>
+
+<p>Done right, this is the highest-ROI enablement investment most companies can make. Ramp time drops 30 to 50%. Your mid-tier reps start closing like your good ones. And your forecast stops depending on whether two people are having a good month.</p>
+
+<p>Curious how mature your current sales motion really is? The <a href="/tools/gtm-predictability">GTM Predictability Scorecard</a> grades it in a few minutes. And if you'd rather build the playbook with help, <a href="/book-a-call">book a strategy session</a> — it's one of the first things we tackle together.</p>
+`,
+  },
+  {
+    slug: "build-your-first-roi-calculator",
+    title: "Building Your First ROI Calculator: A Step-by-Step Guide for B2B Teams",
+    excerpt:
+      "Deals don't stall because buyers stop believing in your product. They stall because nobody can explain the value in dollars the CFO will accept. Here's how to build a simple, credible ROI model your reps can actually use in a deal.",
+    category: "Pricing Strategy",
+    readTime: 8,
+    publishedAt: "2026-04-30",
+    tags: ["ROI", "Pricing", "Value Selling", "Sales"],
+    content: `
+<p>Here's a pattern I've watched play out hundreds of times. The champion loves you. The demo went great. Then the deal hits procurement or the CFO, and it just… stops. Not a no. A slow fade.</p>
+
+<p>Most of the time, the problem isn't price. It's that nobody could translate your product into dollars in a way a finance person would sign off on. "Improves productivity by 30%" doesn't survive contact with a CFO. A number tied to a real line on their P&L does. That translation is what an ROI calculator is for — and most B2B teams either don't have one or have one no buyer believes.</p>
+
+<p>You can build a credible one in an afternoon. Here's how.</p>
+
+<h2>Step 1 — Name the economic problem you actually solve</h2>
+
+<p>Value comes in three flavors: you help them make money, save money, or avoid risk. Pick one or two — not all three. Trying to claim everything is what makes ROI models read as marketing.</p>
+
+<p>Get specific. "We save money" is vague. "We cut the hours your ops team spends on manual reconciliation, and we reduce the error rate that triggers rework" is a model you can build.</p>
+
+<h2>Step 2 — Decide what you need from the customer</h2>
+
+<p>Limit yourself to five to seven inputs, and make every one something a champion can answer without a research project. Number of users or locations. Hours spent on the task today. Current error rate. Loaded cost of the people doing it.</p>
+
+<p>If an input requires the buyer to go dig through three systems, they won't — and your calculator dies on the first call. Easy to answer, and directly tied to the value you create. That's the bar.</p>
+
+<h2>Step 3 — State your assumptions out loud</h2>
+
+<p>Every ROI model rests on assumptions: "we reduce task time by 30 to 50%." The instinct is to hide them. Do the opposite. Show them, and use ranges instead of single numbers.</p>
+
+<p>Visible, conservative assumptions build trust. A model that quietly assumes a 90% improvement and spits out a magical payback number gets dismissed the moment a skeptical CFO looks under the hood. Give your reps a controlled band they can adjust with the buyer in the room — that act of co-building is half the value.</p>
+
+<h2>Step 4 — Build the model (a spreadsheet is fine)</h2>
+
+<p>You don't need software. A clean spreadsheet with three sections does the job:</p>
+
+<ul>
+<li><strong>Inputs</strong> — the five to seven numbers you collect from the buyer.</li>
+<li><strong>Assumptions</strong> — your improvement ranges, clearly labeled.</li>
+<li><strong>Impact</strong> — the annual result: revenue gained, cost saved, risk avoided.</li>
+</ul>
+
+<p>Then surface the three numbers a buyer's finance team actually cares about: payback period in months, ROI as a percentage, and — for larger deals — net present value. Those are the figures that travel up the chain when your champion forwards the case internally.</p>
+
+<h2>Step 5 — Turn the model into a selling asset</h2>
+
+<p>A calculator nobody uses is just a spreadsheet. Two groups have to be able to use it.</p>
+
+<p>Your <strong>reps</strong> need to know how to introduce it, which inputs to gather, and how to build it with the buyer rather than presenting it at them. The co-creation is what makes the buyer believe the number — it's theirs, not yours.</p>
+
+<p>Your <strong>champion</strong> needs a clean one-page export — problem, inputs, impact — they can forward to the CFO without you in the room. Most deals are won or lost in conversations you're not part of. Arm the champion for those.</p>
+
+<h2>The mistakes that wreck ROI calculators</h2>
+
+<p>Three traps catch most teams. <strong>Over-optimistic assumptions</strong> that torch your credibility the moment finance pushes back. <strong>Over-complex models</strong> only an analyst can operate, so reps avoid them. And the classic: a great calculator that lives in one rep's laptop and never makes it into the rest of the team's hands.</p>
+
+<h2>Where this pays off twice</h2>
+
+<p>A good ROI model does more than unstick deals. It anchors your pricing. When the conversation is grounded in the value you create, price becomes a fraction of a number the buyer already accepts — and you discount less, defend premium pricing more easily, and shorten the procurement slog.</p>
+
+<p>This is one of the deliverables I build with clients, because it touches win rate, sales cycle, and margin all at once. If your deals keep stalling at the CFO, that's usually the gap. <a href="/book-a-call">Book a strategy session</a> and we'll pressure-test your value model together — or start with the <a href="/tools/gtm-predictability">GTM Predictability Scorecard</a> to see where value selling ranks among your gaps.</p>
+`,
+  },
+  {
+    slug: "design-your-first-90-day-gtm-sprint",
+    title: "Designing Your First 90-Day GTM Sprint: A Template You Can Steal",
+    excerpt:
+      "Eighteen-month go-to-market transformations don't happen — people lose the plot by month four. Ninety days is the unit of change that actually sticks. Here's a 13-week sprint template you can run, plus a realistic example.",
+    category: "Implementation",
+    readTime: 8,
+    publishedAt: "2026-04-16",
+    tags: ["Implementation", "90-Day Sprint", "GTM", "Execution"],
+    content: `
+<p>I'll be blunt about something the consulting industry won't say: eighteen-month go-to-market transformations almost never finish. Priorities shift, a board meeting reshuffles the roadmap, two key people leave, and by month four the grand plan is a document nobody opens. Big, slow change is fragile.</p>
+
+<p>Ninety days is different. It's long enough to produce real impact and short enough to hold focus and urgency. It fits inside a quarter, survives a planning cycle, and lands within a board's patience window. If you want go-to-market change that actually sticks, stop planning the eighteen-month transformation and run a 90-day sprint instead.</p>
+
+<p>Here's the template I use.</p>
+
+<h2>Pick one focus worth 90 days</h2>
+
+<p>The fastest way to waste a sprint is to aim it at five things. Pick one outcome that will move win rate or predictability within a quarter or two, and that you can actually influence with the people you have. A few that make good sprints:</p>
+
+<ul>
+<li>Clarify the ICP and rebuild top-of-funnel around it.</li>
+<li>Codify the sales process and lift stage-to-stage conversion.</li>
+<li>Move forecast accuracy from plus-or-minus 40% to plus-or-minus 15%.</li>
+</ul>
+
+<p>One focus. One owner. One number you're trying to move. Write it down before you do anything else.</p>
+
+<h2>The 13-week template</h2>
+
+<p><strong>Weeks 1–2: Diagnose and define.</strong> Pull the data — win/loss, pipeline, the metrics tied to your goal. Interview the people closest to the problem. Come out of these two weeks with a tight diagnosis and a clearly defined objective. Don't skip this to "save time." A sprint pointed at the wrong problem just gets you to the wrong place faster.</p>
+
+<p><strong>Weeks 3–6: Design and prototype.</strong> Build the actual things — the ICP scorecard, the playbook sections, the new messaging, the campaign concepts. Then test them small, on a handful of reps or accounts, before you bet the quarter on them. Prototyping in week 5 beats discovering the flaw in week 11.</p>
+
+<p><strong>Weeks 7–10: Implement and enable.</strong> Roll it out to the broader team. This is where most plans quietly die — they get designed and never adopted. Run real training, role-plays, and live campaign launches. Adoption is the work here, not an afterthought.</p>
+
+<p><strong>Weeks 11–13: Measure, learn, decide.</strong> Look at the leading indicators — conversion, stage progression, early win-rate movement. Hold an honest retrospective: what worked, what to lock in permanently, what to keep iterating. End the sprint with a decision, not a vibe.</p>
+
+<h2>The rhythm that holds it together</h2>
+
+<p>A sprint without a cadence drifts. Keep it tight: a 30-minute weekly standup to keep momentum, a biweekly review of whatever you're testing, and a monthly steering check-in with leadership so the sprint stays protected from the usual quarterly chaos. The rhythm is what turns a plan into progress.</p>
+
+<h2>What it looks like in practice</h2>
+
+<p>Picture a Series B SaaS company stuck at a 16% win rate with a forecast that swings 40% a quarter. Their sprint goal: tighten the ICP and rebuild discovery around it.</p>
+
+<p>Weeks 1–2, they pull 60 closed deals and interview their best reps and three lost buyers. The pattern is obvious in hindsight — they win when a specific operational trigger is present and lose when they chase prestige logos without it. Weeks 3–6, they build an ICP scorecard and a new discovery guide and test both on five live deals. Weeks 7–10, the whole team adopts it through role-plays, and marketing retargets top-of-funnel at the high-fit segment. Weeks 11–13, early-stage conversion is up, the pipeline is cleaner, and — critically — leadership agrees to make the scorecard permanent. One number, one quarter, real movement.</p>
+
+<h2>Why this works when big plans don't</h2>
+
+<p>The 90-day sprint works because it respects how change actually happens inside a company: in focused bursts with clear ownership and fast feedback, not in sweeping multi-year programs. You get a win, you lock it in, and you run the next sprint from a stronger base. Stack four of those in a year and you've transformed the go-to-market — without ever betting the company on a plan that needed everything to go right.</p>
+
+<p>If you want help scoping your first sprint — picking the right focus and building the 13-week plan around it — <a href="/book-a-call">book a strategy session</a>. And if you're not yet sure where the biggest opportunity is, run the <a href="/tools/gtm-predictability">GTM Predictability Scorecard</a> first; it'll point you at the gap most worth a sprint.</p>
+`,
+  },
+  {
+    slug: "experiment-backlog-101",
+    title: "Experiment Backlog 101: How to Run 20 GTM Experiments a Quarter",
+    excerpt:
+      "High-growth go-to-market teams run 15 to 20 experiments a quarter. Most companies run two or three and call it strategy. Here's how to build an experiment backlog, prioritize it, and run a cadence that compounds.",
+    category: "Operations",
+    readTime: 7,
+    publishedAt: "2026-04-02",
+    tags: ["Experimentation", "RevOps", "Operating Rhythm", "Growth"],
+    content: `
+<p>Ask a stalling go-to-market team how many experiments they ran last quarter and you'll usually hear "a couple." Ask a high-growth team the same question and the number is 15 or 20. That gap isn't about talent or budget. It's about whether the company treats experimentation as a system or as something it gets around to.</p>
+
+<p>The teams that compound results don't guess better. They test more, learn faster, and fold what works back into how they operate. You can build that muscle, and it starts with a backlog.</p>
+
+<h2>What actually counts as an experiment</h2>
+
+<p>An experiment has three parts: a hypothesis, a measurable outcome, and a defined scope and timeframe. "Let's try LinkedIn" isn't an experiment. "We think a three-touch sequence referencing a recent funding trigger will lift reply rates from 4% to 8% over the next three weeks in our Tier 1 segment" is.</p>
+
+<p>They can be small. A new outbound sequence. A different demo format. A pricing test for one segment. A new follow-up cadence after a stalled deal. Small and frequent beats big and rare — you learn more from twenty small tests than from one quarter-long bet.</p>
+
+<h2>Step 1 — Build the backlog</h2>
+
+<p>Ideas are everywhere; you just have to collect them in one place. Pull from your sales team, marketing, customer success, and product. Mine your win/loss analysis. Turn the questions your board keeps asking into hypotheses to test.</p>
+
+<p>Capture each one in a simple table with the same fields every time: the hypothesis, an owner, the segment or product it applies to, the metric you'll watch, the effort (small, medium, large), an impact score, a confidence score, and a status. That's it. The discipline is in using the same structure every time, not in fancy tooling.</p>
+
+<h2>Step 2 — Prioritize honestly</h2>
+
+<p>You'll have more ideas than capacity, which is good — it forces choices. Score each experiment on impact, confidence, and effort. A simple ICE score (impact times confidence, divided by effort) ranks the list fast and kills the bias toward whatever idea was loudest in the meeting.</p>
+
+<p>The point isn't precision. It's making the trade-offs visible so you run the high-leverage tests first instead of the convenient ones.</p>
+
+<h2>Step 3 — Run a weekly rhythm</h2>
+
+<p>A backlog without a cadence is a wish list. Hold a 30-minute weekly meeting with one job: move items from backlog to in-flight to complete. Two rules keep it healthy. Limit work in progress — five to seven live experiments at once, no more, or nothing finishes. And document every learning, including the failures. A test that "didn't work" still taught you something, and that knowledge is the whole point.</p>
+
+<h2>Step 4 — Turn wins into permanent changes</h2>
+
+<p>This is the step almost everyone skips, and it's where the compounding actually comes from. When an experiment works, it can't just live in someone's memory. Update the playbook. Rewrite the messaging. Change the pricing doc. Train the reps. Make the win part of how the team operates by default.</p>
+
+<p>When one doesn't work, capture why in a sentence or two and move on. The graveyard of failed experiments is one of your most valuable assets — it stops you from re-testing the same dead ends and helps you spot patterns over time.</p>
+
+<h2>Why the system beats the spark</h2>
+
+<p>Most go-to-market improvement gets credited to a clever idea or a great hire. Underneath the best teams, though, is something less glamorous: a backlog, an ICE score, a weekly 30-minute meeting, and the discipline to fold wins back into the system. That's it. That's the machine.</p>
+
+<p>Run it for a year and the math gets serious. Twenty experiments a quarter is eighty a year. Even if only a third produce a keeper, that's two dozen improvements compounding on top of each other — while your competitors run three tests and wonder why they're falling behind.</p>
+
+<p>Experimentation is the fifth part of the Revenue Architecture for a reason: it's what makes the first four keep getting better. If you want help standing up a backlog and a cadence — and leaving with a prioritized list of tests for next quarter — <a href="/book-a-call">book a strategy session</a>. You can also measure how systematic your team is today with the <a href="/tools/gtm-predictability">GTM Predictability Scorecard</a>.</p>
+`,
+  },
+  {
     slug: "why-your-icp-is-probably-wrong",
     title: "Why Your ICP Is Probably Wrong (And How to Fix It)",
     excerpt:

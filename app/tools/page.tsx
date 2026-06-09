@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { MotionDiv } from "@/components/ui/Motion";
-import { ArrowRight, TrendingUp, GitBranch, Search, CheckCircle2, Clock } from "lucide-react";
+import { ArrowRight, TrendingUp, GitBranch, Search, CheckCircle2, Clock, BarChart2, Target } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Free B2B & CPG Strategy Tools | Commerce Media Consulting Group",
@@ -76,6 +76,50 @@ const tools = [
     iconColor: "text-emerald-700",
     badgeColor: "bg-emerald-100 text-emerald-700",
   },
+  {
+    href: "/tools/gtm-predictability",
+    icon: BarChart2,
+    badge: "GTM Diagnosis",
+    audience: "For B2B Companies",
+    audienceColor: "bg-emerald-100 text-emerald-700",
+    title: "GTM Predictability Scorecard",
+    description: "Fifteen questions that score how predictable your revenue engine really is — across positioning, ICP, sales playbook, campaigns, and pipeline rhythm.",
+    time: "10 minutes",
+    outputs: [
+      "Overall GTM Predictability Score (0–100)",
+      "Sub-scores across all 5 parts of the Revenue Architecture",
+      "Your highest-leverage improvement moves, ranked",
+      "Instant results — no signup, emailed or copied",
+    ],
+    cta: "Take the Scorecard",
+    color: "from-gold-500/10 to-gold-600/5",
+    border: "border-gold-200/60",
+    iconBg: "bg-gold-100",
+    iconColor: "text-gold-700",
+    badgeColor: "bg-gold-100 text-gold-700",
+  },
+  {
+    href: "/tools/icp-fit-analyzer",
+    icon: Target,
+    badge: "ICP Strategy",
+    audience: "For B2B Companies",
+    audienceColor: "bg-emerald-100 text-emerald-700",
+    title: "ICP & Deal Fit Analyzer",
+    description: "Enter your recent won and lost deals and instantly see the win/loss patterns that refine your ICP beyond firmographics — drawn from your own data.",
+    time: "5 minutes",
+    outputs: [
+      "Win rate by industry, size, champion, and trigger",
+      "The patterns behind your wins — and your leaks",
+      "A data-backed ICP statement from your own deals",
+      "Instant, private results — copy or email in one click",
+    ],
+    cta: "Analyze Your Deals",
+    color: "from-violet-500/10 to-violet-600/5",
+    border: "border-violet-200/60",
+    iconBg: "bg-violet-100",
+    iconColor: "text-violet-700",
+    badgeColor: "bg-violet-100 text-violet-700",
+  },
 ];
 
 const stats = [
@@ -104,7 +148,7 @@ export default function ToolsPage() {
               Answers before<br className="hidden lg:block" /> the conversation.
             </h1>
             <p className="text-white/80 text-xl leading-relaxed mb-4 max-w-2xl">
-              Three free diagnostic tools for B2B and CPG leaders. Know exactly where you stand, which channels to prioritize, and what to fix — before your next buyer meeting.
+              Five free diagnostic tools for B2B and CPG leaders. Know exactly where you stand, which deals to chase, which channels to prioritize, and what to fix — before your next buyer meeting.
             </p>
             <p className="text-white/55 text-sm leading-relaxed mb-10 max-w-2xl">
               Commerce Media Consulting Group serves B2B companies through our GTM advisory practice and CPG brands through our retail strategy consulting. These tools serve both markets — each labeled so you can go straight to the one that fits.
